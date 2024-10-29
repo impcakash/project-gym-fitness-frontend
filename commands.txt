@@ -1,0 +1,4 @@
+run this commands on terminal:
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
