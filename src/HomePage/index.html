@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant-Fitness Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.svg" alt="Planet Fitness Logo">
+        </div>
+        
+
+
+        <!-- Navigation Menu -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#memberships">Memberships</a></li>
+                <li><a href="#why">Why PF</a></li>
+                <li><a href="#workout">Work Out With Us</a></li>
+                <li><a href="#store">PF Store</a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+        <!-- Right Options -->
+        <div class="right-options">
+            <div class="dropdown">
+                <span>🌐 English</span>
+            </div>
+            <a href="#account">My Account</a>
+            <button class="join-now-btn">Join Now</button>
+        </div>
+
+        <!-- Toggle Button for Mobile -->
+        <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+
+    
+
+    <section class="hero">
+        <img src="abc.jpg" alt="Background Image" class="hero-image">
+        <div class="hero-content">
+            <h1>Welcome to the Judgement Free Zone</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="Search by address, city, or ZIP code">
+                <button class="search-btn">Find a Club</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="memberships">
+      <h1 style="font-size: 45px;">Memberships</h1>
+      <br>
+      <br>
+      <p style="font-size: 20px; text-align: center;">We offer the PF Black Card® Membership and Classic Membership. Both get you access to The Judgement Free Zone®, and tons of cardio and strength equipment.</p>
+      <br>
+
+      <div class="membership-cards">
+
+          <div class="card black-card">
+              <h3>PF Black Card®</h3>
+              <p>Starting at <span class="price">$24.99</span>/mo<span class="small-text">* plus taxes & fees</span></p>
+              <p>Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much more!</p>
+              <button class="best-value">Best Value</button>
+              <button><a href="#" class="join-now">Join Now</a></button>
+              
+          </div>
+
+
+          <div class="card classic-card">
+              <h3>Classic</h3>
+              <p>Starting at <span class="price">$15</span>/mo<span class="small-text">* plus taxes & fees</span></p>
+              <p>Our standard membership, with unlimited access to your home club.</p>
+              <a href="#" class="join-now">Join Now</a>
+          </div>
+
+      </div>
+
+      <div class="compare-section" >
+          <button class="compare-btn">Compare Memberships</button>
+      </div>
+  </section>
+
+
+
+
+  <!-- Slider -->
+  <div class="fullscreen-container">
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>DONATE TODAY TO EMPOWER THE NEXT GENERATION</h1>
+                    <p>
+                        This October, Planet Fitness is hosting our annual fall fundraiser in support of our longtime non-profit partner, Boys & Girls Clubs of America. Every dollar raised will fund Judgement Free Generation® programming that promotes kindness and advances the wellbeing of youth, including academic scholarships, community grants, and Mini Judgement Free Zone® fitness spaces, which provide safe, welcoming places for Boys & Girls Club youth to exercise.
+                    </p>
+                    <p>
+                        Donate today by visiting PFGives.com, or any Planet Fitness club in the U.S. or Puerto Rico.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+            <!-- Additional Slides -->
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+
+
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Buttons -->
+        <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+        <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+
+
+
+
+<div class="fullscreen-image-container">
+  <img src="place-where.jpg" alt="Responsive Full-Screen Image">
+</div>
+
+
+
+
+
+
+<!-- Section: A Place Where Everyone Feels Welcome -->
+<section class="welcome-section">
+  <h2>A PLACE WHERE <span class="highlight">EVERYONE</span> FEELS WELCOME</h2>
+  <div class="info-cards">
+      <div class="card">
+          <div class="icon">
+              <img src="path/to/icon1.svg" alt="Value Icon">
+          </div>
+          <h3>Best value on the planet</h3>
+          <p>We believe in providing a high-quality experience at an affordable cost.</p>
+          <a href="#" class="learn-more">Learn More</a>
+      </div>
+      <div class="card">
+          <div class="icon">
+              <img src="path/to/icon2.svg" alt="Equipment Icon">
+          </div>
+          <h3>Tons of equipment</h3>
+          <p>Tons of cardio and strength equipment, all in a clean and spacious environment.</p>
+          <a href="#" class="learn-more">Learn More</a>
+      </div>
+      <div class="card">
+          <div class="icon">
+              <img src="path/to/icon3.svg" alt="Locations Icon">
+          </div>
+          <h3>2,600+ locations</h3>
+          <p>More than 2,600 Planet Fitness locations worldwide.</p>
+          <a href="#" class="learn-more">Learn More</a>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!--  -->
+
+<section id="pf-app-section">
+    <div class="content">
+        <h1>Bring the <span class="highlight">Judgement Free Zone</span> anywhere</h1>
+        <p>
+            The PF App has it all – pick the best time to visit your club with the Crowd Meter, track your activities, access hundreds of digital on-demand workouts, and more! Ready to get movin’?
+        </p>
+        <button onclick="downloadApp()">Download the PF App</button>
+    </div>
+</section>
+
+
+<!--  -->
+
+
+
+ <!-- Slider -->
+ <div class="fullscreen-container">
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>DONATE TODAY TO EMPOWER THE NEXT GENERATION</h1>
+                    <p>
+                        This October, Planet Fitness is hosting our annual fall fundraiser in support of our longtime non-profit partner, Boys & Girls Clubs of America. Every dollar raised will fund Judgement Free Generation® programming that promotes kindness and advances the wellbeing of youth, including academic scholarships, community grants, and Mini Judgement Free Zone® fitness spaces, which provide safe, welcoming places for Boys & Girls Club youth to exercise.
+                    </p>
+                    <p>
+                        Donate today by visiting PFGives.com, or any Planet Fitness club in the U.S. or Puerto Rico.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+            <!-- Additional Slides -->
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+
+
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="image-section">
+                    <img src="abc.jpg" alt="Fundraiser Image">
+                    <div class="logo-section">
+                        <p class="logo-text">THE</p>
+                        <p class="logo-big">JUDGEMENT FREE GENERATION</p>
+                        <p class="bgca-logo">BOYS & GIRLS CLUBS OF AMERICA</p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                    <p>
+                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
+                    </p>
+                    <button onclick="donateNow()">Donate Today</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation Buttons -->
+        <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+        <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</div>
+
+
+<!--  -->
+
+<section class="get-started">
+    <h2>Get Started Today</h2>
+    <div class="options">
+        <div class="option">
+            <img src="search-icon.svg" alt="Search Icon">
+            <h3>Find a Club Near You</h3>
+        </div>
+        <div class="option">
+            <img src="tag-icon.svg" alt="Tag Icon">
+            <h3>Explore Perks</h3>
+        </div>
+        <div class="option">
+            <img src="virtual-tour-icon.svg" alt="Virtual Tour Icon">
+            <h3>Take a Virtual Tour</h3>
+        </div>
+    </div>
+
+    <p style="margin-top: 10px;">*Classic memberships begin at $15 and PF Black Card® memberships begin at $24.99, billed monthly. Memberships may include 12-month commitment. State and local taxes may apply. Subject to an annual fee of $49. Prices may vary depending on location. Services and perks subject to availability and restrictions. Must be at least 18 years old to enroll, or 13-17 with parent/guardian. State and local restrictions on tanning frequency with PF Black Card® memberships apply. Participating locations only. Locations independently owned and operated. See home club for details. We reserve the right to correct pricing errors or withdraw offer at any time. ©2024 Planet Fitness Franchising LLC</p>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="planet-fitness-logo.png" alt="Planet Fitness Logo">
+            </div>
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="#">Franchising</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">PF Purpose</a></li>
+                        <li><a href="#">PF Media Network</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions of Use</a></li>
+                        <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                        <li><a href="#">Your State and EU Privacy Rights</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <a href="#" class="download-app">Download the PF App</a>
+                    <div class="region">
+                        <img src="globe-icon.svg" alt="Globe Icon">
+                        <span>Region: US (English)</span>
+                        <i class="arrow-down"></i>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Planet Fitness Franchising, LLC.</p>
+        </div>
+    </footer>
+</section>
+
+
+
+
+
+
+ 
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
