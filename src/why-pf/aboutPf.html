@@ -22,6 +22,9 @@
 </head>
 
 <body>
+     <!------------------------------ Navbar--------------------- -->
+  <div id="navbar-placeholder"></div>
+
     <div class="mt-10 md:mt-20 overflow-hidden">
         <div class="px-6 py-4 md:mb-5 md:mx-20 text-4xl sm:text-5xl md:text-7xl font-bold ">
             <span class="text-purple-700">About </span>Planet Fitness
@@ -126,8 +129,26 @@
         </button>
     </div>
 
+      <!-- Footer Content -->
+  <div id="footer-placeholder"></div>
 
+  <!-- <script>
+    //  Navbar -----------------------
+    fetch('/src/navbar/Nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
 
+    // footer
+    fetch('/src/footer/index.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script> -->
 </body>
 
 </html>
