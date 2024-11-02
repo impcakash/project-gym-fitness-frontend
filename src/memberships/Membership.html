@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"rel="stylesheet">
+  <link rel="stylesheet" href="./Membership.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link src="../OurMembership/app.html">
+
+</head>
+
+<body class="bg-gray-100 top-90 ">
+    
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="#">Memberships</a></li>
+        <li class="dropdown">
+            <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Why Planet Fitness</a></li>
+                <li><a href="#">About Planet Fitness</a></li>
+                <li><a href="#">Member Perks</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Clubs</a></li>
+                <li><a href="#">PF App</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </li>
+        <li><a href="#">PF Store</a></li>
+    </ul>
+    <div class="navbar-actions">
+        <select class="language-select">
+            <!-- <div class="flag-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"> -->
+            <option value="en"> US (English)</option>
+            <option value="es">US (Spanish)</option>
+            <option value="es">Canada (English)</option>
+            <option value="es">Panama (Spanish)</option>
+            <option value="es">Mexico (Spanish)</option>
+            <option value="es">Australia (English)</option>
+            <option value="es">Spain (Spanish)</option>
+            <!-- </div> -->
+        </select>
+
+        <button class="account-btn">My Account</button>
+        <button class="join-btn">Join Now</button>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+
+  
+  <!-- Full-Page Hamburger Menu -->
+  <div id="hamburger-menu">
+    <div class="menu-close">
+        <button id="close-btn">X</button>
+    </div>
+    <nav>
+        <a href="#">Memberships</a>
+        <!-- <a href="#">Why PF  <i class="fa-solid fa-caret-down"></i></a> -->
+        <li class="dropdown">
+            <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Why Planet Fitness</a></li>
+                <li><a href="#">About Planet Fitness</a></li>
+                <li><a href="#">Member Perks</a></li>
+            </ul>
+        </li>
+        <!-- <a href="#">Work Out With Us  <i class="fa-solid fa-caret-down"></i></a> -->
+          <li class="dropdown">
+            <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Clubs</a></li>
+                <li><a href="#">PF App</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </li>
+        <a href="#">PF Store</a>
+        <div class="flag-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag">
+            <!-- <span>Region: US (English)</span> -->
+            <select class="language-select">
+                <option value="en">Region: US (English)</option>
+                <option value="es">US (Spanish)</option>
+                <option value="es">Canada (English)</option>
+                <option value="es">Panama (Spanish)</option>
+                <option value="es">Mexico (Spanish)</option>
+                <option value="es">Australia (English)</option>
+                <option value="es">Spain (Spanish)</option>
+    
+    
+            </select>
+        </div>
+        <a href="#" class="account">My Account</a>
+        <a href="#" class="help">Need Help?</a>
+    </nav>
+</div>
+   </nav>
+
+   <section class="membership-section">
+    <h1 class="h1">Our Memberships</h1>
+    <div class="membership-cards">
+      <div class="card black-card">
+        <div class="xyz">
+          <h2>PF BLACK CARD®</h2>
+          <span> <button class="btn"> Best Value</button></span>
+        </div>
+        <p>Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much
+          more!</p>
+
+        <div class="pqr">
+          <a href="#" class="learn-btn1">Learn More</a>
+          <button class="join-btn1">Join Now</button>
+        </div>
+
+      </div>
+      <div class="card classic-card">
+        <h2>Classic</h2>
+        <p>Our standard membership, with unlimited access to your home club.</p>
+
+        <div class="pqr">
+          <button class="learn-btn2">Learn More</button>
+          <a href="#" class="join-btn2">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="container2">
+    <a class="a" href=""> Black Card</a>
+    <a class="a" href="">Classic</a>
+    <a class="a" href="">Compare</a>
+  </div>
+
+  
+
+  <!-- <iframe src="./../PF Card/pf.html" width="100%" height="2000px" frameborder="0" scrolling="no" ></iframe>
+   -->
+
+</body>
+<script src="./Membership.js"> </script>
+</html>
