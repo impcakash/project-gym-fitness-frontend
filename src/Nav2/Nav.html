@@ -2,134 +2,132 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"rel="stylesheet">
-  <link rel="stylesheet" href="./Nav.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-</style>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
 
 </head>
 
 <body class="bg-gray-100 top-90 ">
-    
-  <nav class="navbar">
-    <div class="navbar-logo">
-        <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
-    </div>
-    <ul class="navbar-menu">
-        <li><a href="#">Find a Club</a></li>
-       
-       
-        <li><a href="#">About Planet Fitness</a></li>
-    </ul>
-    <div class="navbar-actions">
-        <button class="account-btn">My Account</button>
-        <select class="language-select">
-            <!-- <div class="flag-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"> -->
 
-                
-            <option value="en"> US (English)</option>
-            <option value="es">US (Spanish)</option>
-            <option value="es">Canada (English)</option>
-            <option value="es">Panama (Spanish)</option>
-            <option value="es">Mexico (Spanish)</option>
-            <option value="es">Australia (English)</option>
-            <option value="es">Spain (Spanish)</option>
-            <!-- </div> -->
-        </select>
+    <nav class="navbar">
 
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search..." />
-            <button id="search-button" onclick="search()">🔍 Search</button>
+        <div class="navbar-logo">
+            <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
         </div>
-        
 
-        <button class="join-btn">Join Now</button>
-    </div>
-    <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</nav>
+        <ul class="navbar-menu">
+            <li><a href="#">Find a Club</a></li>
+            <li><a href="#">About Planet Fitness</a></li>
+        </ul>
 
+        <div class="navbar-actions">
 
-  
-  <!-- Full-Page Hamburger Menu -->
-  <div id="hamburger-menu">
-    <div class="menu-close">
-        <button id="close-btn">X</button>
-    </div>
-    <nav>
-        <a href="#">Find a Club</a>
-        
-    
-        <a href="#">About Planet Fitnesse</a>
-        <div class="flag-container">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag">
-            <!-- <span>Region: US (English)</span> -->
+            <button class="account-btn">My Account</button>
+
             <select class="language-select">
-                <option value="en">Region: US (English)</option>
+                <option value="en"> US (English)</option>
                 <option value="es">US (Spanish)</option>
                 <option value="es">Canada (English)</option>
                 <option value="es">Panama (Spanish)</option>
                 <option value="es">Mexico (Spanish)</option>
                 <option value="es">Australia (English)</option>
                 <option value="es">Spain (Spanish)</option>
-    
-    
             </select>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button" onclick="search()">🔍 Search</button>
+            </div>
+
+            <button class="join-btn">Join Us</button>
         </div>
-        <a href="#" class="account">My Account</a>
-        <!-- <a href="#" class="help">Need Help?</a> -->
-    </nav>
-</div>
-  
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
     </nav>
-  
+
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu">
+
+        <div class="menu-close">
+            <button id="close-btn">X</button>
+        </div>
+
+        <nav>
+            <a href="#">Find a Club</a>
+            <a href="#">About Planet Fitnesse</a>
+
+            <div class="flag-container">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+                    alt="US Flag">
+
+                <!-- <span>Region: US (English)</span> -->
+
+                <select class="language-select">
+                    <option value="en">Region: US (English)</option>
+                    <option value="es">US (Spanish)</option>
+                    <option value="es">Canada (English)</option>
+                    <option value="es">Panama (Spanish)</option>
+                    <option value="es">Mexico (Spanish)</option>
+                    <option value="es">Australia (English)</option>
+                    <option value="es">Spain (Spanish)</option>
+                </select>
+            </div>
+
+            <a href="#" class="account">My Account</a>
+            <!-- <a href="#" class="help">Need Help?</a> -->
+
+        </nav>
+    </div>
+
+    </nav>
 
 </body>
-<script> 
-       // JavaScript to toggle the hamburger menu
-   const menuToggle = document.getElementById("menu-toggle");
-   const hamburgerMenu = document.getElementById("hamburger-menu");
-   const closeBtn = document.getElementById("close-btn");
-   
-   menuToggle.addEventListener("click", () => {
-       hamburgerMenu.style.display = "flex";
-   });
-   
-   closeBtn.addEventListener("click", () => {
-       hamburgerMenu.style.display = "none";
-   });
-   
 
-    //  search bar
+<script>
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    menuToggle.addEventListener("click", () => {
+        hamburgerMenu.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+        hamburgerMenu.style.display = "none";
+    });
+
     function search() {
-    const searchContainer = document.querySelector('.search-container');
-    const searchInput = document.getElementById('search-input');
-    
-    if (searchContainer.classList.contains('active')) {
-        alert(`Searching for: ${searchInput.value}`);
-        searchInput.value = ''; 
-    } else {
-        searchContainer.classList.add('active');
-        searchInput.style.display = 'block';
-        searchInput.focus(); 
-    }
-}
+        const searchContainer = document.querySelector('.search-container');
+        const searchInput = document.getElementById('search-input');
 
-    
-     
+        if (searchContainer.classList.contains('active')) {
+            alert(`Searching for: ${searchInput.value}`);
+            searchInput.value = '';
+        } else {
+            searchContainer.classList.add('active');
+            searchInput.style.display = 'block';
+            searchInput.focus();
+        }
+    }
+
 </script>
+
 </html>
