@@ -288,7 +288,7 @@ body {
 .background-image {
   width: 60%;
   height: 100%; /* Matches the height with the video */
-  background-image: url('abc4.png');
+  background-image: url('assets/abc4.png');
   background-size: cover; /* Fills the container while maintaining aspect ratio */
   background-position: center;
 }
@@ -1020,7 +1020,7 @@ button:hover {
 /*  */
 /* Full-screen background section */
 #pf-app-section {
-  background-image: url('xyz3.png');
+  background-image: url('./assets/xyz3.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
