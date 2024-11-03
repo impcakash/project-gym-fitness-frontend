@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/pf-icon.ico" type="image/x-icon">
+    <title>Planet Fitness Customer Service and FAQ | Planet Fitness</title>
+
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="./styles/quesAnswer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="./scripts/quesAnswer.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <style gf-font-style="'Barlow Condensed':400">
+        @font-face {
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xHT2lv0tKk.woff2) format('woff2'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTx3L3I-JCGChYJ8VI-L6OO_au7B2xU.woff) format('woff');
+            unicode-range: U+0000-00FF, U-02BC;
+        }
+
+        @font-face {
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: local('Barlow Condensed SemiBold'),
+                local('BarlowCondensed-SemiBold'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2) format('woff2'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873_3I.woff) format('woff');
+            unicode-range: U+0000-00FF, U-02BC;
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v12/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2RlV9Su1cai.woff) format('woff');
+            unicode-range: U+0000-00FF;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="#">Memberships</a></li>
+                <li class="dropdown">
+                    <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Why Planet Fitness</a></li>
+                        <li><a href="#">About Planet Fitness</a></li>
+                        <li><a href="#">Member Perks</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Clubs</a></li>
+                        <li><a href="#">PF App</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PF Store</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <select class="language-select">
+                    <!-- <div class="flag-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"> -->
+                    <option value="en"> US (English)</option>
+                    <option value="es">US (Spanish)</option>
+                    <option value="es">Canada (English)</option>
+                    <option value="es">Panama (Spanish)</option>
+                    <option value="es">Mexico (Spanish)</option>
+                    <option value="es">Australia (English)</option>
+                    <option value="es">Spain (Spanish)</option>
+                    <!-- </div> -->
+                </select>
+
+                <button class="account-btn">My Account</button>
+                <button class="join-btn">Join Now</button>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Full-Page Hamburger Menu -->
+        <div id="hamburger-menu">
+            <div class="menu-close">
+                <button id="close-btn">X</button>
+            </div>
+            <nav>
+                <a href="#">Memberships</a>
+                <!-- <a href="#">Why PF  <i class="fa-solid fa-caret-down"></i></a> -->
+                <li class="dropdown">
+                    <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Why Planet Fitness</a></li>
+                        <li><a href="#">About Planet Fitness</a></li>
+                        <li><a href="#">Member Perks</a></li>
+                    </ul>
+                </li>
+                <!-- <a href="#">Work Out With Us  <i class="fa-solid fa-caret-down"></i></a> -->
+                <li class="dropdown">
+                    <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Our Clubs</a></li>
+                        <li><a href="#">PF App</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <a href="#">PF Store</a>
+                <div class="flag-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+                        alt="US Flag">
+                    <!-- <span>Region: US (English)</span> -->
+                    <select class="language-select">
+                        <option value="en">Region: US (English)</option>
+                        <option value="es">US (Spanish)</option>
+                        <option value="es">Canada (English)</option>
+                        <option value="es">Panama (Spanish)</option>
+                        <option value="es">Mexico (Spanish)</option>
+                        <option value="es">Australia (English)</option>
+                        <option value="es">Spain (Spanish)</option>
+
+
+                    </select>
+                </div>
+                <a href="#" class="account">My Account</a>
+                <a href="#" class="help">Need Help?</a>
+            </nav>
+        </div>
+        </nav>
+
+        <div class="p-4 mb-4">
+            <div class="top-head-1 text-center">Frequently Asked Questions</div>
+            <div class="top-head-2 text-center mt-3">Have a question? We can help.</div>
+        </div>
+
+        <div class="mt-12">
+            <div class="middle-head-1 text-center mt-4 mb-4">Explore by Category</div>
+
+            <div class="explore-category">
+                <div class="category-grid">
+                    <div class="category-item">
+                        <div class="icon">
+                            <img src="./assets/FAQ-Assests/membership-billing.svg" alt="Membership & Billing Icon">
+                        </div>
+                        <p class="p-text">Membership & Billing</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="icon">
+                            <img src="./assets/FAQ-Assests/mobile-app.svg" alt="Mobile App Icon">
+                        </div>
+                        <p class="p-text">Mobile App</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="icon">
+                            <img src="./assets/FAQ-Assests/club-policies.svg" alt="Club Policies Icon">
+                        </div>
+                        <p class="p-text">Club Policies</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="icon">
+                            <img src="./assets/FAQ-Assests/pf-policies.svg" alt="PF Policies Icon">
+                        </div>
+                        <p class="p-text">PF Policies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <div class="pt-12">
+                <div class="mt-12 mb-8 box-width-max m-auto box-text-1">Membership & Billing
+                </div>
+            </div>
+
+            <div class="mt-4 mb-4">
+                <div class="mt-4 box-width-max m-auto ">
+                    <div class="faq-container">
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>How do I transfer my membership to a different Planet Fitness club?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can transfer your membership online with just a few clicks. You are eligible to
+                                    transfer online if all of the following are true. You are not a minor. You have been
+                                    a
+                                    Planet Fitness member for at least 90 days. You haven't transferred your membership
+                                    in
+                                    the past 90 days. You don't owe any outstanding dues or fees at your current club,
+                                    have
+                                    a financial cosigner, or a third-party subsidized membership. You have a membership
+                                    that
+                                    is billed monthly, not a Paid in Full membership. </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Where do I go If I have questions or need help with the billing for my account?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>If your home club is open, your best source of billing or membership information is
+                                    to
+                                    contact them directly. If your home club is closed, please contact our member
+                                    services
+                                    department. Please note that the Member Services department is open Monday through
+                                    Friday from 9am - 6pm, EST. They will respond to your inquiry as soon as possible.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Why do you need my checking account for a membership?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The method in which members are able to pay for their monthly membership varies by
+                                    location, but many Planet Fitness clubs accept payment through checking accounts
+                                    only.
+                                    We require an Electronic Funds Transfer (EFT) through checking accounts for your
+                                    convenience: This allows us to be able to continue your membership without
+                                    interruption
+                                    or the need to update your payment information if your credit card is lost, stolen,
+                                    invalid, or expired.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>When is my annual fee due?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Annual fees are billed to a member once per year. Your annual fee billing date is
+                                    dependent on your join date and membership type. A staff member at your club can
+                                    help
+                                    you determine when your annual fee date is.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>How do I upgrade my membership?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Upgrading your membership has never been faster or easier. You can do it all online
+                                    simply by clicking here (you'll need your PF Club Pass number). Or, stop by the club
+                                    and
+                                    our front desk staff can do it for you.</p>
+                            </div>
+                        </div>
+
+                        <!-- =================== -->
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>How do I downgrade my membership?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Stop by your club and club staff can downgrade your membership.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Does Planet Fitness offer classes or personal training?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes. We offer free fitness training in small group formats that are first come, first
+                                    serve. Fitness classes are led by certified fitness trainers and are available to
+                                    all
+                                    Planet Fitness members. All trainers must be employed by the club franchise
+                                    location.
+                                    Outside trainers are not allowed. Please see your home club for details.
+                                    <br> <br>
+                                    Additionally, our PF App is equipped with tons of helpful routines from
+                                    beginner-level
+                                    workouts to advanced fitness training. Simply select "Workouts" at the bottom of the
+                                    home tab to access dozens of training videos. Also, each of our machines is equipped
+                                    with a unique QR code. Simply scan the QR scanner located at the top right corner of
+                                    the
+                                    Tutorials section of the PF App. You will immediately receive instruction on how to
+                                    use
+                                    the equipment!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>How do I cancel my membership?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>While we hate to see you cancel your membership, our cancellation process may vary
+                                    club
+                                    to club, so the best first step is to contact your home location to confirm the
+                                    cancellation policy. For most locations, you can visit your home club in person to
+                                    cancel your membership or send written notification via mail to your home club
+                                    requesting to cancel. Some members may also be eligible to cancel their membership
+                                    online based on their membership type and location of their home club. If you have
+                                    additional questions, please contact your home club or our Member Services
+                                    department.
+                                    <br><br>
+                                    Please note, to stop the billing of your monthly membership on the 17th, the club
+                                    must
+                                    receive written notice delivered by the 10th in person or through mail, as it may
+                                    take
+                                    up to 7 business days for billing changes to take effect. To stop the billing of the
+                                    annual fee, cancellation must be completed by the 25th of the month prior to the
+                                    annual
+                                    fee date. Lastly, if your membership has a minimum term and is canceled prior to end
+                                    of
+                                    contract term, a $58 buyout fee is required.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="show-more-container show-more">
+                            <button id="show-more-btn">Show Less</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-bg-color mt-12 pb-20 pt-12">
+            <div class="mt-12">
+                <div class="mt-12 mb-8 box-width-max m-auto box-text-1">Mobile App
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="mt-4 box-width-max m-auto ">
+                    <div class="faq-container">
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Where can I locate the barcode to link my club membership to the PF App?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>If you are unable to locate your barcode, please contact your home club.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Can I use my planetfitness.com login credentials to log in to the app?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, you can use the same email and password you use to access your membership on our
+                                    member website. If you haven’t created a password yet, create an account in the
+                                    mobile app using the email you used to sign up for Planet Fitness, and you will be
+                                    prompted to create a password.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>I did not receive the verification email. What should I do?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You should receive the verification email immediately, however, in some cases, it may
+                                    take some time to send. If you didn't receive the verification email from us, check
+                                    out our suggestions below:
+
+                                    If you can't find the email in your inbox, check your spam/junk folder.
+
+                                    If you never received the email, come back to the app and request another
+                                    verification email by clicking Re-send Verification Email.
+
+                                    If you requested another email and still can't find the message, double check the
+                                    spelling of your email address. If you've spelled your email correctly and can't
+                                    find the verification email, please submit a support ticket.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>I selected the “Forgot password” link, but I am not receiving an email to reset my
+                                    password. What should I do now?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>For security reasons, we can only send a “forgot password” link to the email that’s
+                                    already associated with your account. If you do not receive a password reset email,
+                                    try checking additional email addresses that may be associated with your app
+                                    account. If you cannot remember the username/email address associated with an app
+                                    account, please submit a support ticket.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>I spelled my name wrong while creating my account, how do I fix this?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>If you spelled your email address incorrectly while creating your account, we
+                                    recommend starting fresh by creating a new account.</p>
+                            </div>
+                        </div>
+
+                        <div class="show-more-container show-more">
+                            <button>Show More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-8 pb-12">
+            <div class="mt-16">
+                <div class="mt-12 mb-8 box-width-max m-auto box-text-1">Club Policies
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="mt-4 box-width-max m-auto ">
+                    <div class="faq-container">
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Do you offer childcare? Are my kids allowed in the club while I'm working out?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>In order to keep our membership cost conveniently low, we do not offer childcare
+                                    services. And for the safety of children under the age of 13, we ask that they do
+                                    not come into the facility. We do try to keep our clubs open as long as possible to
+                                    accommodate all schedules. Check with your local club for their hours.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>What's the dress code?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Members play a role in supporting both the Judgement Free® atmosphere and safety on
+                                    the club floor.
+
+                                    Planet Fitness strives to provide a safe and comfortable environment for all
+                                    members. As such, clothing with offensive messages and clothing that may present
+                                    health or safety hazards or damage club equipment, is not allowed. For example,
+
+                                    Open-toed shoes or sandals pose a safety hazard for members working out;
+
+                                    Jeans or pants with prominent grommets may damage equipment; and
+
+                                    Clothing with hateful, lewd or offensive messaging undermines our welcoming
+                                    environment
+
+                                    Proper exercise attire is required and should cover the body appropriately; full
+                                    coverage shorts need to be longer than your glutes. Planet Fitness, in its sole
+                                    discretion, reserves the right to determine what constitutes proper attire.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>How old do I have to be to get a Planet Fitness membership?</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can join PF if you are 13 years or older with a parent/legal guardian's
+                                    permission. Members aged 13 and must be accompanied by a parent or guardian when
+                                    they work out. Many clubs also require that members aged 14 must be accompanied by a
+                                    parent/guardian at all times. Members who are 15-17 years old (15-18 in regions
+                                    where 19 is the age of majority) must have a signed waiver from a parent or
+                                    guardian. For further questions or clarifications regarding age policy, reach out to
+                                    your local club for more details.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Club Use</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Club use is restricted to:
+
+                                    Members
+
+                                    PF Black Card® guests
+
+                                    Non-members who pay a day fee
+
+                                    Non-members bearing official day pass
+
+                                    Non-members participating in a limited time promotion (ex: Pizza/Bagel day, Tax Day,
+                                    etc.)
+
+                                    Non-Black Card® members who pay a franchise fee
+
+                                    Non-members of all ages, other than PF Black Card® guests, are not allowed to wait
+                                    for members in the club.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Equipment Use Restrictions</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Planet Fitness does not set time limits on any piece of cardio, functional, or
+                                    strength training equipment, with the exception of equipment located in the
+                                    30-Minute Express Circuit.
+                                    <br><br>
+                                    Amenities may have usage restrictions such as age, time, and frequency of use.
+                                    Restrictions may be imposed by law, or by the need to ensure all members are given
+                                    the opportunity to use the Amenities during their visit.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="show-more-container show-more">
+                            <button>Show More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-bg-color mt-12 pb-20 pt-12">
+            <div class="mt-12">
+                <div class="mt-12 mb-8 box-width-max m-auto box-text-1">PF Policies
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="mt-4 box-width-max m-auto ">
+                    <div class="faq-container">
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Non-Discrimination Policy</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Planet Fitness does not tolerate discrimination or harassment of any person on its
+                                    premises on the basis of race, national origin, ancestry, color, creed, religion,
+                                    sex, sexual orientation, gender, gender identity, age, disability, or any other
+                                    basis protected by law. All members will have access to restroom and locker room
+                                    facilities that correspond to their sincerely held, self-reported gender identity to
+                                    the extent permitted by applicable law.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Planet Fitness Member Gender Identity Non-Discrimination Policy</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Planet Fitness is more than your neighborhood fitness center – we are the Judgement
+                                    Free Zone®. At Planet Fitness, we celebrate and champion diversity and provide an
+                                    environment where everyone feels accepted, respected and like they belong. Planet
+                                    Fitness prohibits discrimination and harassment that is based on gender identity or
+                                    gender expression in the workplace and in our clubs. The following is our corporate
+                                    policy regarding the accommodation of our members and team members in terms of their
+                                    gender identity.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Anti-Harassment</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Planet Fitness does not tolerate verbal or physical harassment of any member or team
+                                    member for any reason. Violations by members may result in cancellation of
+                                    membership.
+
+                                    If any member experiences harassment:
+
+                                    The incident of harassment shall be reported to a Planet Fitness team member or
+                                    manager as soon as possible
+
+                                    Issues that are not resolved in a manner satisfactory to a member may also be
+                                    directed to info@planetfitness.com</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>Compliance with the Americans with Disabilities Act</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>All clubs must comply with and operate within the requirements of the Americans with
+                                    Disabilities Act and other accessibility laws and regulations.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <p>PF Black Card® Guest Policy</p>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>PF Black Card® members are welcome to bring one guest with them each time they visit.
+                                    Guests must be 18 years or older. If a guest is between the ages of 13 to 17, they
+                                    are welcome to visit if accompanied by a parent or guardian. Please note that PF
+                                    Black Card® guests may not have access to PF Black Card® perks
+                                    <br><br>
+                                    Inviting a PF Black Card® guest is a breeze with the PF Mobile App. By sending an
+                                    invite to your workout buddy through the PF App, they will be prompted to complete a
+                                    short online registration and then be granted access to a digital Club Pass, making
+                                    check-in at the club easy, touchless and quick!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="show-more-container show-more">
+                            <button>Show More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-container" style="width: 100%;">
+
+            <div class="footer-logo">
+                <img src="https://www.planetfitness.com/remix/images/small-logo.svg" alt="PF Logo">
+            </div>
+
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="#">Franchising</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">PF Purpose</a></li>
+                        <li><a href="#">PF Media Network</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions of Use</a></li>
+                        <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
+                        <li><a href="#">Your State and EU Privacy Rights</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-region">
+                <button class="download-button">Download the PF App</button>
+                <div class="region-selector">
+                    <span>Region: US (English)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Planet Fitness Franchising, LLC.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
