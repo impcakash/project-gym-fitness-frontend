@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"rel="stylesheet">
+  <link rel="stylesheet" href="./app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body class="bg-gray-100 top-90 ">
+    
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="#">Memberships</a></li>
+        <li class="dropdown">
+            <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Why Planet Fitness</a></li>
+                <li><a href="#">About Planet Fitness</a></li>
+                <li><a href="#">Member Perks</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Clubs</a></li>
+                <li><a href="#">PF App</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </li>
+        <li><a href="#">PF Store</a></li>
+    </ul>
+    <div class="navbar-actions">
+        <select class="language-select">
+            <!-- <div class="flag-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"> -->
+            <option value="en"> US (English)</option>
+            <option value="es">US (Spanish)</option>
+            <option value="es">Canada (English)</option>
+            <option value="es">Panama (Spanish)</option>
+            <option value="es">Mexico (Spanish)</option>
+            <option value="es">Australia (English)</option>
+            <option value="es">Spain (Spanish)</option>
+            <!-- </div> -->
+        </select>
+
+        <button class="account-btn">My Account</button>
+        <button class="join-btn">Join Now</button>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+
+  
+  <!-- Full-Page Hamburger Menu -->
+  <div id="hamburger-menu">
+    <div class="menu-close">
+        <button id="close-btn">X</button>
+    </div>
+    <nav>
+        <a href="#">Memberships</a>
+        <!-- <a href="#">Why PF  <i class="fa-solid fa-caret-down"></i></a> -->
+        <li class="dropdown">
+            <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Why Planet Fitness</a></li>
+                <li><a href="#">About Planet Fitness</a></li>
+                <li><a href="#">Member Perks</a></li>
+            </ul>
+        </li>
+        <!-- <a href="#">Work Out With Us  <i class="fa-solid fa-caret-down"></i></a> -->
+          <li class="dropdown">
+            <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Our Clubs</a></li>
+                <li><a href="#">PF App</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </li>
+        <a href="#">PF Store</a>
+        <div class="flag-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag">
+            <!-- <span>Region: US (English)</span> -->
+            <select class="language-select">
+                <option value="en">Region: US (English)</option>
+                <option value="es">US (Spanish)</option>
+                <option value="es">Canada (English)</option>
+                <option value="es">Panama (Spanish)</option>
+                <option value="es">Mexico (Spanish)</option>
+                <option value="es">Australia (English)</option>
+                <option value="es">Spain (Spanish)</option>
+    
+    
+            </select>
+        </div>
+        <a href="#" class="account">My Account</a>
+        <a href="#" class="help">Need Help?</a>
+    </nav>
+</div>
+   </nav>
+
+
+   <div class="container">
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search by address, city, or ZIP code" >
+        <!-- <i id="icon" class="fa-brands fa-searchengin"> </i> -->
+        <button onclick="getCurrentLocation()"> <i class="fa-solid fa-paper-plane"> </i> Use my current location</button>
+    </div>
+    <div class="message">
+        <h2>No Clubs Nearby</h2>
+        <p>Sorry, there are no PF Clubs within a 100-mile radius of the entered location.</p>
+    </div>
+
+
+
+    </div>
+</div>
+  
+
+</body>
+<script>
+  // JavaScript to toggle the hamburger menu
+  const menuToggle = document.getElementById("menu-toggle");
+   const hamburgerMenu = document.getElementById("hamburger-menu");
+   const closeBtn = document.getElementById("close-btn");
+   
+   menuToggle.addEventListener("click", () => {
+       hamburgerMenu.style.display = "flex";
+   });
+   
+   closeBtn.addEventListener("click", () => {
+       hamburgerMenu.style.display = "none";
+   });
+   
+
+     // JavaScript to toggle the hamburger menu -2
+     const menuToggle2 = document.getElementById("menu-toggle");
+     const hamburgerMenu2 = document.getElementById("hamburger-menu");
+     const closeBtn2 = document.getElementById("close-btn");
+     
+     menuToggle2.addEventListener("click", () => {
+         hamburgerMenu2.style.display = "flex";
+     });
+     
+     closeBtn.addEventListener("click", () => {
+         hamburgerMenu2.style.display = "none";
+     });
+     
+
+    function getCurrentLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        alert(`Latitude: ${latitude}, Longitude: ${longitude}`);
+        // Here you could send the location data to a server or use it in some way
+    }
+
+    function showError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                alert("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("Location information is unavailable.");
+                break;
+            case error.TIMEOUT:
+                alert("The request to get user location timed out.");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("An unknown error occurred.");
+                break;
+        }
+    }
+
+    function getCurrentLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+
+    function showPosition(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        alert(`Latitude: ${latitude}, Longitude: ${longitude}`);
+        // Here you could send the location data to a server or use it in some way
+    }
+
+    function showError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                alert("User denied the request for Geolocation.");
+                break;
+            case error.POSITION_UNAVAILABLE:
+                alert("Location information is unavailable.");
+                break;
+            case error.TIMEOUT:
+                alert("The request to get user location timed out.");
+                break;
+            case error.UNKNOWN_ERROR:
+                alert("An unknown error occurred.");
+                break;
+        }
+    }
+
+ </script>
+</html>
