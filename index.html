@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant-Fitness Website</title>
+    <link rel="shortcut icon" href="./src/my-account/assets/pf-icon.ico" type="image/x-icon">
+    <title>Planet Fitness | A Gym and Fitness Club for Everyone</title>
+
     <link rel="stylesheet" href="./src/HomePage/home.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style gf-font-style="'Barlow Condensed':400">
         @font-face {
             font-family: 'Barlow Condensed';
@@ -41,6 +48,7 @@
     </style>
 
 </head>
+
 <body>
     <header>
 
@@ -50,24 +58,24 @@
                 <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
             </div>
             <ul class="navbar-menu">
-                <li><a href="#">Memberships</a></li>
+                <li><a href="./src/Membership/Membership/Member.html">Memberships</a></li>
                 <li class="dropdown">
                     <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Why Planet Fitness</a></li>
-                        <li><a href="#">About Planet Fitness</a></li>
-                        <li><a href="#">Member Perks</a></li>
+                        <li><a href="./src/why-pf/whyPf.html">Why Planet Fitness</a></li>
+                        <li><a href="./src/why-pf/aboutPf.html">About Planet Fitness</a></li>
+                        <li><a href="./src/why-pf/MembershipPerk.html">Member Perks</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Our Clubs</a></li>
+                        <li><a href="">Our Clubs</a></li>
                         <li><a href="#">PF App</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="./src/Blogs/blog.html">Blog</a></li>
                     </ul>
                 </li>
-                <li><a href="#">PF Store</a></li>
+                <li><a href="./src/pf-store/file.html">PF Store</a></li>
             </ul>
             <div class="navbar-actions">
                 <select class="language-select">
@@ -82,9 +90,10 @@
                     <option value="es">Spain (Spanish)</option>
                     <!-- </div> -->
                 </select>
-        
-                <button class="account-btn">My Account</button>
-                <button class="join-btn">Join Now</button>
+
+                <a href="./src/my-account/myAccount.html"><button class="account-btn">My Account</button></a>
+                <a href="./src/Join Now/app.html"><button class="join-btn">Join Now</button></a>
+
             </div>
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
@@ -92,37 +101,38 @@
                 <span></span>
             </div>
         </nav>
-        
-        
-          
-          <!-- Full-Page Hamburger Menu -->
-          <div id="hamburger-menu">
+
+
+
+        <!-- Full-Page Hamburger Menu -->
+        <div id="hamburger-menu">
             <div class="menu-close">
                 <button id="close-btn">X</button>
             </div>
             <nav>
-                <a href="#">Memberships</a>
+                <a href="./src/Membership/Membership/Member.html">Memberships</a>
                 <!-- <a href="#">Why PF  <i class="fa-solid fa-caret-down"></i></a> -->
                 <li class="dropdown">
                     <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Why Planet Fitness</a></li>
-                        <li><a href="#">About Planet Fitness</a></li>
-                        <li><a href="#">Member Perks</a></li>
+                        <li><a href="./src/why-pf/whyPf.html">Why Planet Fitness</a></li>
+                        <li><a href="./src/why-pf/aboutPf.html">About Planet Fitness</a></li>
+                        <li><a href="./src/why-pf/MembershipPerk.html">Member Perks</a></li>
                     </ul>
                 </li>
                 <!-- <a href="#">Work Out With Us  <i class="fa-solid fa-caret-down"></i></a> -->
-                  <li class="dropdown">
+                <li class="dropdown">
                     <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Our Clubs</a></li>
                         <li><a href="#">PF App</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="./src/Blogs/blog.html">Blog</a></li>
                     </ul>
                 </li>
-                <a href="#">PF Store</a>
+                <a href="./src/pf-store/file.html">PF Store</a>
                 <div class="flag-container">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+                        alt="US Flag">
                     <!-- <span>Region: US (English)</span> -->
                     <select class="language-select">
                         <option value="en">Region: US (English)</option>
@@ -132,41 +142,41 @@
                         <option value="es">Mexico (Spanish)</option>
                         <option value="es">Australia (English)</option>
                         <option value="es">Spain (Spanish)</option>
-            
-            
+
+
                     </select>
                 </div>
-                <a href="#" class="account">My Account</a>
+                <a href="./src/my-account/myAccount.html" class="account">My Account</a>
                 <a href="#" class="help">Need Help?</a>
             </nav>
         </div>
-          
-        
-            </nav>
 
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  const menuToggle = document.querySelector(".menu-toggle");
-                  const hamburgerMenu = document.getElementById("hamburger-menu");
-                  const menuClose = document.querySelector(".menu-close");
-              
-                  // Show the hamburger menu when the menu toggle is clicked
-                  menuToggle.addEventListener("click", () => {
+
+        </nav>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const menuToggle = document.querySelector(".menu-toggle");
+                const hamburgerMenu = document.getElementById("hamburger-menu");
+                const menuClose = document.querySelector(".menu-close");
+
+                // Show the hamburger menu when the menu toggle is clicked
+                menuToggle.addEventListener("click", () => {
                     hamburgerMenu.style.display = "flex";
-                  });
-              
-                  // Hide the hamburger menu when the close button is clicked
-                  menuClose.addEventListener("click", () => {
-                    hamburgerMenu.style.display = "none";
-                  });
                 });
-              </script>
+
+                // Hide the hamburger menu when the close button is clicked
+                menuClose.addEventListener("click", () => {
+                    hamburgerMenu.style.display = "none";
+                });
+            });
+        </script>
 
 
 
-        </header>
+    </header>
 
-        <br>
+    <br>
 
     <!-- <section class="hero">
         <img src="abc.jpg" alt="Background Image" class="hero-image">
@@ -197,7 +207,7 @@
         </div>
     </section>
 
-    
+
     <!-- <section id="memberships">
       <h1 style="font-size: 45px;">Memberships</h1>
       <br>
@@ -232,347 +242,389 @@
   </section> -->
 
 
-  
-  <section id="memberships">
-    <!-- Title and Description -->
-    <div class="membership-header">
-        <h1>Memberships</h1>
-        <p>
-            We offer the PF Black Card® Membership and Classic Membership. Both get you access to The Judgement Free Zone®, and tons of cardio and strength equipment.
-        </p>
-    </div>
 
-    <!-- Membership Cards -->
-    <div class="membership-cards">
-        <!-- PF Black Card -->
-        <div class="card black-card" style="background: linear-gradient(135deg, #6a0dad, #000000); color: white;">
-            <h3 class="card-title">PF BLACK CARD®</h3>
-            <p class="price">Starting at <span class="price-value">$24.99</span>/mo<span class="small-text">* plus taxes & fees</span></p>
-            <p class="card-description">Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much more!</p>
-            <div class="button-container">
-                <a href="#" class="learn-more" style="color: white;">Learn More</a>
-                <button class="join-now">Join Now</button>
-            </div>
-            <span class="best-value">Best Value</span>
+    <section id="memberships">
+        <!-- Title and Description -->
+        <div class="membership-header">
+            <h1>Memberships</h1>
+            <p>
+                We offer the PF Black Card® Membership and Classic Membership. Both get you access to The Judgement Free
+                Zone®, and tons of cardio and strength equipment.
+            </p>
         </div>
 
-        <!-- Classic Card -->
-        <div class="card classic-card">
-            <h3 class="card-title">CLASSIC</h3>
-            <p class="price">Starting at <span class="price-value">$15</span>/mo<span class="small-text">* plus taxes & fees</span></p>
-            <p class="card-description">Our standard membership, with unlimited access to your home club.</p>
-            <div class="button-container">
+        <!-- Membership Cards -->
+        <div class="membership-cards">
+            <!-- PF Black Card -->
+            <div class="card black-card" style="background: linear-gradient(135deg, #6a0dad, #000000); color: white;">
+                <h3 class="card-title">PF BLACK CARD®</h3>
+                <p class="price">Starting at <span class="price-value">$24.99</span>/mo<span class="small-text">* plus
+                        taxes & fees</span></p>
+                <p class="card-description">Access to any club, bring a guest anytime, PF+ premium digital workouts, and
+                    so much more!</p>
+                <div class="button-container">
+                    <a href="#" class="learn-more" style="color: white;">Learn More</a>
+                    <button class="join-now">Join Now</button>
+                </div>
+                <span class="best-value">Best Value</span>
+            </div>
+
+            <!-- Classic Card -->
+            <div class="card classic-card">
+                <h3 class="card-title">CLASSIC</h3>
+                <p class="price">Starting at <span class="price-value">$15</span>/mo<span class="small-text">* plus
+                        taxes & fees</span></p>
+                <p class="card-description">Our standard membership, with unlimited access to your home club.</p>
+                <div class="button-container">
+                    <a href="#" class="learn-more">Learn More</a>
+                    <button class="join-now">Join Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compare Section -->
+        <div class="compare-section">
+            <button class="compare-btn"
+                style="background-color: transparent; color:#6a0dad; border: 1px solid #6a0dad; border-radius: 30px;">Compare
+                Memberships</button>
+        </div>
+    </section>
+
+
+
+
+    <!-- Slider -->
+    <div class="fullscreen-container">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/1Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>Shop the Genuine McGraw Collection</h1>
+                        <p>
+                            Check out our exclusive merch collaboration with Tim McGraw! All sale profits* from our
+                            limited edition Genuine McGraw Collection will be donated to Boys & Girls Clubs of America.
+                            Supplies are limited, so act fast! *Representing at least 41% of the retail purchase price
+                            of each purchase. Offer valid in U.S. only (excluding Puerto Rico). BGCA contact
+                            information: 1275 Peachtree St NE, Atlanta, GA 30309, 404-487-5700. Purchase is not tax
+                            deductible. For more information, please visit shop.planetfitness.com.
+                        </p>
+                        <button onclick="donateNow()">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <!-- Additional Slides -->
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/2Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>WELCOME TO PLANET FITNESS</h1>
+                        <p>
+                            We’ve created a comfortable, safe and energetic environment for everyone. A space where you
+                            can go at your own pace, and do your own thing without ever having to worry about being
+                            judged.
+                        </p>
+                        <button onclick="donateNow()">Learn More</button>
+                    </div>
+                </div>
+
+
+
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/3Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>GET ENERGIZED WITH EXCLUSIVE PERKS</h1>
+                        <p>
+                            Save big on your favorite brands with exclusive discounts and special offers.
+                        </p>
+                        <button onclick="donateNow()">Explore Perks</button>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/4Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>TAKE A VIRTUAL CLUB TOUR!</h1>
+                        <p>
+                            Join us on a virtual club tour around a Planet Fitness. You’ll learn all about the different
+                            areas of the club and Teddy will show you how to get the most out of a membership and where
+                            you can start your fitness journey.
+                        </p>
+                        <button onclick="donateNow()">Watch the club tour!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation Buttons -->
+            <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="fullscreen-image-container">
+        <img src="./src/HomePage/assets/place-where.png" alt="Responsive Full-Screen Image">
+    </div>
+
+
+
+    <!-- Section: A Place Where Everyone Feels Welcome -->
+    <section class="welcome-section">
+        <h2>A PLACE WHERE <span class="highlight">EVERYONE</span> FEELS WELCOME</h2>
+        <div class="info-cards">
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/HomePage/assets/money-check-dollar-solid (1).svg" alt="Value Icon">
+                </div>
+                <h3>Best value on the planet</h3>
+                <p>We believe in providing a high-quality experience at an affordable cost.</p>
                 <a href="#" class="learn-more">Learn More</a>
-                <button class="join-now">Join Now</button>
             </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/HomePage/assets/dumbbell-solid.svg" alt="Equipment Icon">
+                </div>
+                <h3>Tons of equipment</h3>
+                <p>Tons of cardio and strength equipment, all in a clean and spacious environment.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="./src/HomePage/assets/globe-solid.svg" alt="Locations Icon">
+                </div>
+                <h3>2,600+ locations</h3>
+                <p>More than 2,600 Planet Fitness locations worldwide.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--  -->
+
+    <section id="pf-app-section">
+        <div class="content" style="margin-left: 70px;">
+            <h1>Bring the <span class="highlight">Judgement Free Zone</span> anywhere</h1>
+            <p>
+                The PF App has it all – pick the best time to visit your club with the Crowd Meter, track your
+                activities, access hundreds of digital on-demand workouts, and more! Ready to get movin’?
+            </p>
+            <button onclick="downloadApp()">Download the PF App</button>
+        </div>
+    </section>
+
+
+    <!--  -->
+
+
+
+    <!-- Slider -->
+    <div class="fullscreen-container">
+        <div class="slider-container">
+            <div class="slider-wrapper">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/3Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>DONATE TODAY TO EMPOWER THE NEXT GENERATION</h1>
+                        <p>
+                            This October, Planet Fitness is hosting our annual fall fundraiser in support of our
+                            longtime non-profit partner, Boys & Girls Clubs of America. Every dollar raised will fund
+                            Judgement Free Generation® programming that promotes kindness and advances the wellbeing of
+                            youth, including academic scholarships, community grants, and Mini Judgement Free Zone®
+                            fitness spaces, which provide safe, welcoming places for Boys & Girls Club youth to
+                            exercise.
+                        </p>
+                        <p>
+                            Donate today by visiting PFGives.com, or any Planet Fitness club in the U.S. or Puerto Rico.
+                        </p>
+                        <button onclick="donateNow()">Donate Today</button>
+                    </div>
+                </div>
+
+                <!-- Additional Slides -->
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/4Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                        <p>
+                            By contributing, you are helping to create programs that empower young people and give them
+                            a safe space to learn, grow, and develop into strong leaders.
+                        </p>
+                        <button onclick="donateNow()">Donate Today</button>
+                    </div>
+                </div>
+
+
+
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/2Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                        <p>
+                            By contributing, you are helping to create programs that empower young people and give them
+                            a safe space to learn, grow, and develop into strong leaders.
+                        </p>
+                        <button onclick="donateNow()">Donate Today</button>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/1Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                        <p>
+                            By contributing, you are helping to create programs that empower young people and give them
+                            a safe space to learn, grow, and develop into strong leaders.
+                        </p>
+                        <button onclick="donateNow()">Donate Today</button>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="image-section">
+                        <img src="./src/HomePage/assets/4Img.png" alt="Fundraiser Image">
+                    </div>
+                    <div class="content-section">
+                        <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
+                        <p>
+                            By contributing, you are helping to create programs that empower young people and give them
+                            a safe space to learn, grow, and develop into strong leaders.
+                        </p>
+                        <button onclick="donateNow()">Donate Today</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Slider Navigation Buttons -->
+            <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
         </div>
     </div>
 
-    <!-- Compare Section -->
-    <div class="compare-section">
-        <button class="compare-btn" style="background-color: transparent; color:#6a0dad; border: 1px solid #6a0dad; border-radius: 30px;">Compare Memberships</button>
+
+    <!--  -->
+
+    <section class="get-started">
+        <h2>Get Started Today</h2>
+        <div class="options">
+            <div class="option">
+                <img src="./src/HomePage/assets/magnifying-glass-solid.svg" alt="Search Icon">
+                <h3>Find a Club Near You</h3>
+            </div>
+            <div class="option">
+                <img src="./src/HomePage/assets/tag-solid.svg" alt="Tag Icon">
+                <h3>Explore Perks</h3>
+            </div>
+            <div class="option">
+                <img src="./src/HomePage/assets/arrows-rotate-solid.svg" alt="Virtual Tour Icon">
+                <h3>Take a Virtual Tour</h3>
+            </div>
+        </div>
+
+        <p style="margin-top: 10px; " class="info-paragraph">*Classic memberships begin at $15 and PF Black Card®
+            memberships begin at $24.99, billed monthly. Memberships may include 12-month commitment. State and local
+            taxes may apply. Subject to an annual fee of $49. Prices may vary depending on location. Services and perks
+            subject to availability and restrictions. Must be at least 18 years old to enroll, or 13-17 with
+            parent/guardian. State and local restrictions on tanning frequency with PF Black Card® memberships apply.
+            Participating locations only. Locations independently owned and operated. See home club for details. We
+            reserve the right to correct pricing errors or withdraw offer at any time. ©2024 Planet Fitness Franchising
+            LLC</p>
+    </section>
+
+
+    <!-- Slider Navigation Buttons -->
+    <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
     </div>
-</section>
-
-
-
-
-  <!-- Slider -->
-  <div class="fullscreen-container">
-    <div class="slider-container">
-        <div class="slider-wrapper">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/1Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>Shop the Genuine McGraw Collection</h1>
-                    <p>
-                        Check out our exclusive merch collaboration with Tim McGraw! All sale profits* from our limited edition Genuine McGraw Collection will be donated to Boys & Girls Clubs of America. Supplies are limited, so act fast! *Representing at least 41% of the retail purchase price of each purchase. Offer valid in U.S. only (excluding Puerto Rico). BGCA contact information: 1275 Peachtree St NE, Atlanta, GA 30309, 404-487-5700. Purchase is not tax deductible. For more information, please visit shop.planetfitness.com.
-                    </p>
-                    <button onclick="donateNow()">SHOP NOW</button>
-                </div>
-            </div>
-
-            <!-- Additional Slides -->
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/2Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>WELCOME TO PLANET FITNESS</h1>
-                    <p>
-                        We’ve created a comfortable, safe and energetic environment for everyone. A space where you can go at your own pace, and do your own thing without ever having to worry about being judged.
-                    </p>
-                    <button onclick="donateNow()">Learn More</button>
-                </div>
-            </div>
-
-
-
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/3Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>GET ENERGIZED WITH EXCLUSIVE PERKS</h1>
-                    <p>
-                        Save big on your favorite brands with exclusive discounts and special offers.
-                    </p>
-                    <button onclick="donateNow()">Explore Perks</button>
-                </div>
-            </div>
-
-
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/4Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>TAKE A VIRTUAL CLUB TOUR!</h1>
-                    <p>
-                        Join us on a virtual club tour around a Planet Fitness. You’ll learn all about the different areas of the club and Teddy will show you how to get the most out of a membership and where you can start your fitness journey.
-                    </p>
-                    <button onclick="donateNow()">Watch the club tour!</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Slider Navigation Buttons -->
-        <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
-        <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
-    </div>
-</div>
-
-
-
-
-<div class="fullscreen-image-container">
-  <img src="./src/HomePage/assets/place-where.png" alt="Responsive Full-Screen Image">
-</div>
-
-
-
-<!-- Section: A Place Where Everyone Feels Welcome -->
-<section class="welcome-section">
-  <h2>A PLACE WHERE <span class="highlight">EVERYONE</span> FEELS WELCOME</h2>
-  <div class="info-cards">
-      <div class="card">
-          <div class="icon">
-              <img src="./src/HomePage/assets/money-check-dollar-solid (1).svg" alt="Value Icon">
-          </div>
-          <h3>Best value on the planet</h3>
-          <p>We believe in providing a high-quality experience at an affordable cost.</p>
-          <a href="#" class="learn-more">Learn More</a>
-      </div>
-      <div class="card">
-          <div class="icon">
-              <img src="./src/HomePage/assets/dumbbell-solid.svg" alt="Equipment Icon">
-          </div>
-          <h3>Tons of equipment</h3>
-          <p>Tons of cardio and strength equipment, all in a clean and spacious environment.</p>
-          <a href="#" class="learn-more">Learn More</a>
-      </div>
-      <div class="card">
-          <div class="icon">
-              <img src="./src/HomePage/assets/globe-solid.svg" alt="Locations Icon">
-          </div>
-          <h3>2,600+ locations</h3>
-          <p>More than 2,600 Planet Fitness locations worldwide.</p>
-          <a href="#" class="learn-more">Learn More</a>
-      </div>
-  </div>
-</section>
-
-
-<!--  -->
-
-<section id="pf-app-section">
-    <div class="content" style="margin-left: 70px;">
-        <h1>Bring the <span class="highlight">Judgement Free Zone</span> anywhere</h1>
-        <p>
-            The PF App has it all – pick the best time to visit your club with the Crowd Meter, track your activities, access hundreds of digital on-demand workouts, and more! Ready to get movin’?
-        </p>
-        <button onclick="downloadApp()">Download the PF App</button>
-    </div>
-</section>
-
-
-<!--  -->
-
-
-
- <!-- Slider -->
- <div class="fullscreen-container">
-    <div class="slider-container">
-        <div class="slider-wrapper">
-            <!-- Slide 1 -->
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/3Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>DONATE TODAY TO EMPOWER THE NEXT GENERATION</h1>
-                    <p>
-                        This October, Planet Fitness is hosting our annual fall fundraiser in support of our longtime non-profit partner, Boys & Girls Clubs of America. Every dollar raised will fund Judgement Free Generation® programming that promotes kindness and advances the wellbeing of youth, including academic scholarships, community grants, and Mini Judgement Free Zone® fitness spaces, which provide safe, welcoming places for Boys & Girls Club youth to exercise.
-                    </p>
-                    <p>
-                        Donate today by visiting PFGives.com, or any Planet Fitness club in the U.S. or Puerto Rico.
-                    </p>
-                    <button onclick="donateNow()">Donate Today</button>
-                </div>
-            </div>
-
-            <!-- Additional Slides -->
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/4Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
-                    <p>
-                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
-                    </p>
-                    <button onclick="donateNow()">Donate Today</button>
-                </div>
-            </div>
-
-
-
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/2Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
-                    <p>
-                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
-                    </p>
-                    <button onclick="donateNow()">Donate Today</button>
-                </div>
-            </div>
-
-
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/1Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
-                    <p>
-                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
-                    </p>
-                    <button onclick="donateNow()">Donate Today</button>
-                </div>
-            </div>
-
-            <div class="slide">
-                <div class="image-section">
-                    <img src="./src/HomePage/assets/4Img.png" alt="Fundraiser Image">
-                </div>
-                <div class="content-section">
-                    <h1>SUPPORTING YOUTH DEVELOPMENT</h1>
-                    <p>
-                        By contributing, you are helping to create programs that empower young people and give them a safe space to learn, grow, and develop into strong leaders.
-                    </p>
-                    <button onclick="donateNow()">Donate Today</button>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Slider Navigation Buttons -->
-        <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
-        <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
-    </div>
-</div>
-
-
-<!--  -->
-
-<section class="get-started">
-    <h2>Get Started Today</h2>
-    <div class="options">
-        <div class="option">
-            <img src="./src/HomePage/assets/magnifying-glass-solid.svg" alt="Search Icon">
-            <h3>Find a Club Near You</h3>
-        </div>
-        <div class="option">
-            <img src="./src/HomePage/assets/tag-solid.svg" alt="Tag Icon">
-            <h3>Explore Perks</h3>
-        </div>
-        <div class="option">
-            <img src="./src/HomePage/assets/arrows-rotate-solid.svg" alt="Virtual Tour Icon">
-            <h3>Take a Virtual Tour</h3>
-        </div>
     </div>
 
-    <p style="margin-top: 10px; " class="info-paragraph">*Classic memberships begin at $15 and PF Black Card® memberships begin at $24.99, billed monthly. Memberships may include 12-month commitment. State and local taxes may apply. Subject to an annual fee of $49. Prices may vary depending on location. Services and perks subject to availability and restrictions. Must be at least 18 years old to enroll, or 13-17 with parent/guardian. State and local restrictions on tanning frequency with PF Black Card® memberships apply. Participating locations only. Locations independently owned and operated. See home club for details. We reserve the right to correct pricing errors or withdraw offer at any time. ©2024 Planet Fitness Franchising LLC</p>
-</section>
 
 
- <!-- Footer Section -->
- <footer>
-    <div class="footer-container" style="width: 100%;">
-        <div class="footer-logo">
-            <img src="https://www.planetfitness.com/remix/images/small-logo.svg" alt="PF Logo"> <!-- Placeholder for the logo -->
-        </div>
 
-        <div class="footer-sections">
-            <div class="footer-column">
-                <h4>Info</h4>
-                <ul>
-                    <li><a href="#">Newsroom</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h4>Partners</h4>
-                <ul>
-                    <li><a href="#">Franchising</a></li>
-                    <li><a href="#">Investor Relations</a></li>
-                    <li><a href="#">PF Purpose</a></li>
-                    <li><a href="#">PF Media Network</a></li>
-                </ul>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container" style="width: 100%;">
+            <div class="footer-logo">
+                <img src="https://www.planetfitness.com/remix/images/small-logo.svg" alt="PF Logo">
+                <!-- Placeholder for the logo -->
             </div>
 
-            <div class="footer-column">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms and Conditions of Use</a></li>
-                    <li><a href="#">Do Not Sell or Share My Personal Information</a></li>
-                    <li><a href="#">Your State and EU Privacy Rights</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                </ul>
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <h4>Info</h4>
+                    <ul>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="./src/my-account/careers.html">Careers</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="./src/Blogs/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Partners</h4>
+                    <ul>
+                        <li><a href="./src/why-pf/whyPf.html">Why PF</a></li>
+                        <li><a href="./src/why-pf/MembershipPerk.html">Member Perks</a></li>
+                        <li><a href="#">Our Club</a></li>
+                        <li><a href="./src/why-pf/aboutPf.html">About PF</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="./src/pf-store/file.html">PF Store</a></li>
+                        <li><a href="#">Your State and EU Privacy Rights</a></li>
+                        <li><a href="./src/my-account/myAccount.html">My Account</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-region">
+                <button class="download-button">Download the PF App</button>
+                <div class="region-selector">
+                    <span>Region: US (English)</span>
+                </div>
             </div>
         </div>
 
-        <div class="footer-region">
-            <button class="download-button">Download the PF App</button>
-            <div class="region-selector">
-                <span>Region: US (English)</span>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Planet Fitness Franchising, LLC.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-    </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2024 Planet Fitness Franchising, LLC.</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
-  
-</footer>
+    </footer>
 
     <script src="./src/HomePage/home.js" defer></script>
 </body>
+
 </html>

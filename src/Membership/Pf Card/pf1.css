@@ -91,7 +91,7 @@ body{
     width: 70%;
     height: 580px;
       margin-top: -155px;
-      margin-left: 730px;
+      margin-left: 700px;
       justify-content:center;
       display: flex;
       /* position: absolute; */
@@ -228,8 +228,6 @@ body{
 
 }
 .subtitle {
-  /* font-size: 14px; */
-  /* font-weight: bold; */
   margin-top: 113px;
   margin-left: -190px;
 }  
@@ -269,11 +267,11 @@ body{
   width: 170px;
 }
 .dropdown-content {
-  display: none; /* Default state is hidden */
+  display: none; 
 }
 
 .dropdown-content.open {
-  display: block; /* Shows the content if the 'open' class is present */
+  display: block; 
 }
 
 
@@ -286,14 +284,12 @@ body{
       }
     
       .title, .title span {
-        font-size: 28px;
-      }
-      .dropdown-content img {
-        width: 20vh;
-         
+        font-size: 27px;
+         padding: 70px 0px 0px 90px ;
       }
       .imagee{
         margin-top: 100px;
+        
     
       }
       .container3 {
@@ -321,7 +317,7 @@ body{
           }
     
       .dropdown-content img {
-        width: 400px;
+        width: 460px;
         height: auto;
         margin: 0;
         left: 50%;
@@ -383,11 +379,18 @@ body{
       .card, .black-card {
         width: 100%;
       }
+      .content h2{
+         display: flex;
+         flex-direction: row;
+         margin: 150px 160px 0px -160px;
+         padding-right: -190px;
+      }
     
       .subtitle, .title, .title span {
         font-size: 24px;
         margin: 10px 0;
       }
+       
     
       .image-container, .content {
         width: 100%;
