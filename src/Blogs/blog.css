@@ -1,0 +1,542 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", "Open Sans Condensed", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    font-family: Barlow Condensed;
+    height: 100%;
+    
+
+}
+
+/* Nav Bar */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3c3c3c;
+    /* background-color: rgb(70, 69, 67); */
+    color: white;
+    height: 12vh;
+    position: relative; /* Ensure the navbar has positioning */
+    z-index: 10; /* Example z-index for the navbar */
+}
+
+.navbar-logo {
+    position: relative; /* Make sure the logo has positioning */
+    z-index: 17; /* Ensure this is higher than overlapping elements */
+}
+.navbar-logo img {
+    width: 100px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 600px;
+    font-size: 20px;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.language-select,
+.account-btn {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    background-color: rgb(70, 69, 67);
+    color: #fff;
+}
+
+.join-btn {
+    background: #fcd900;
+    color: purple;
+    border-radius: 5px;
+    padding: 15px;
+    width: 130px;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: black;
+    margin: 4px;
+    transition: 0.3s;
+    margin-right: 25px;
+}
+
+#hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(70, 69, 67);
+    color: white;
+    padding: 50px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#hamburger-menu nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    /* text-decoration: none; */
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 38px;
+    margin-left: -170px;
+}
+
+/* .flag-container img{
+     border-radius: 0px;
+    border: 90px;
+} */
+
+.flag-container span {
+    margin-right: -500px;
+}
+
+.menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100px;
+    transition: width 0.3s ease;
+    justify-content: space-between;
+    /* font-size: 25px; */
+}
+
+#search-input {
+    flex: 1;
+    padding: 7px 12px;
+    border: none;
+    outline: none;
+    display: none;
+}
+
+#search-button {
+    font-size: 25px;
+    border: none;
+    padding: 7px 13px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 20%;
+    outline: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+}
+
+.search-container.active #search-input {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .navbar-menu,
+    .navbar-actions {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+/* Cover Image Styling */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust height as needed for cover effect */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.text-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+}
+
+/* Content Section */
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 40px; /* Slightly reduced side padding */
+}
+
+.trending, .most-liked {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.trending img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.trending-content {
+    margin-top: 15px;
+}
+
+.trending-content h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trending-content a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.most-liked {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.most-liked h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.liked-item {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid #ffeb3b;
+}
+
+.liked-item a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.liked-item a:hover {
+    text-decoration: underline;
+}
+
+/* Card Section Styling */
+.card-container {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px auto;
+    padding: 0 40px; /* Slightly reduced side padding */
+}
+
+.card {
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    font-weight: bold;
+    color: #6a1b9a;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0 20px; /* Further reduce side padding for smaller screens */
+    }
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+}
+
+
+/* Footer */
+.footer-box {
+    background-color: #762b85; /* Dark purple background */
+    font-family: "Barlow Condensed", sans-serif;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 20px 0; /* Added padding for top and bottom */
+    margin: 0; /* Remove left and right margin */
+}
+
+.footer-font-1 {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+    margin: 0 0 20px; /* Reduced margin for consistency */
+}
+
+.back-to-top {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-link-box {
+    background-color: #640a76; /* Lighter purple for contrast */
+    border-radius: 5px;
+    width: 160px;
+    padding: 15px;
+    margin: 0 auto; /* Center align */
+}
+
+.span-symbol-1 {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.footer-top-box {
+    width: 70%;
+    margin: 0 auto; /* Center align */
+}
+
+.footer-top-box-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-font-2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer-font-2 > div:hover {
+    color: rgb(252, 217, 0); /* Highlight color on hover */
+}
+
+.footer-top-box-2 {
+    width: 40%;
+    margin: 20px auto; /* Added margin for spacing */
+}
+
+.footer-font-3 {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-font-3 > div:hover {
+    color: rgb(252, 217, 0);
+}
+
+.hr-border {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.297);
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.footer-box-down {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 0 auto; /* Center align */
+}
+
+.footer-box-down-left {
+    width: 50%; /* Adjusted width for balance */
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.footer-box-down-left-top > div:hover {
+    color: rgba(250, 250, 250, 0.694);
+}
+
+.footer-box-down-right {
+    width: 50%; /* Adjusted width for balance */
+}
+
+.footer-box-down-left-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap for smaller screens */
+}
+
+.footer-box-down-right-top > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center align social icons */
+}
+
+.footer-box-down-right-top > div > div {
+    width: 30px; /* Fixed width for icons */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.footer-box-down-right-down {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 100;
+}
+
+.footer-copyright {
+    margin: 1rem 0; /* Vertical margin for copyright */
+}
+
+@media (max-width: 768px) {
+    .footer-top-box-content {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .footer-box-down {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%; /* Full width for small screens */
+    }
+
+    .footer-box-down-left {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .footer-box-down-right {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .footer-box-down-left-top {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%; /* Full width for small screens */
+    }
+
+    .footer-box-down-right-top > div > div {
+        margin: 0 5px; /* Reduced spacing for small screens */
+    }
+
+    .footer-copyright {
+        margin: 1rem 0; /* Consistent margins for copyright */
+    }
+}

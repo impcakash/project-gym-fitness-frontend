@@ -1,0 +1,419 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:white;
+    color: black;
+    height: 15vh;
+}
+
+.navbar-logo img {
+    width: 145px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 320px;
+    font-size: 20px;
+}
+
+.navbar-menu li {
+    position: relative;
+}
+
+.navbar-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ebe9e9;
+    top: 40px;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: black;
+    display: block;
+    width: 210px;
+    gap: 10px;
+    /* text-transform: capitalize; */
+  
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.language-select, .account-btn {
+    /* background: #555; */
+    /* color: white; */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.join-btn{
+    background:rebeccapurple;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 35px ;
+    padding: 15px;
+    width: 130px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: black;
+    margin: 4px;
+    transition: 0.3s;
+    margin-right: 25px;
+}
+
+/* Full-screen Hamburger Menu */
+#hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+    color: black;
+    padding: 50px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* text-decoration: none; */
+}
+
+#hamburger-menu nav {
+    display: flex;
+    flex-direction: column;
+     font-size: 20px;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    /* text-decoration: none; */
+
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 38px;
+    margin-left: -170px;
+}
+/* .flag-container img{
+     border-radius: 0px;
+    border: 90px;
+} */
+.flag-container span{
+
+    margin-right: -500px;
+
+}
+
+.menu-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu, .navbar-actions {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.membership-section {
+    text-align: center;
+    width: 100%;
+    /* height: 43%; */
+    background: linear-gradient(to bottom, #4e0681, #a64ca6);
+    color: white;
+}
+  .membership-section h1{
+    font-size:65px;
+    font-weight: 600;
+    top: 200px;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+  }
+  .membership-cards {
+    display: flex;
+    justify-content:center;
+    margin-left: 30px;
+    margin-bottom: 30px;         
+  }
+    
+  .card {
+    background-color: #6a0dad; /* Dark purple background for contrast */
+    color: white; /* White font color */
+    width: 430px;
+    margin: 15px;
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: Arial, sans-serif;
+}
+
+  .black-card {
+    background-color: #4b0082;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 44px;
+  }
+  .xyz{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    margin-top: -23px;
+    padding-bottom: 20px;
+    font-weight: 500; 
+    font-size: 20px;
+  }
+  .membership-section p {
+      padding-bottom: 20px;  
+  }
+  
+  .btn{
+    padding: 5px 14px 5px 14px;
+    background-color: yellow;
+    font-size: 14px;
+    color: #6a0dad;
+    font-weight:bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+  }
+  .learn-btn2{
+      padding: 10px 20px;
+      color: #25063b;
+      cursor: pointer;
+      border: none;
+      font-size: 16px;
+  }
+  .join-btn1{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6a0dad;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .learn-btn1{
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  .join-btn2{
+  padding: 10px 20px;
+  /* background-color: #fff; */
+  color:white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #6a0dad;
+  text-decoration: none;
+ }
+  .classic-card h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: -46px 0px -0px -270px;
+    padding: 17px;
+  }
+  .classic-card p{
+    padding: 9px;
+  }
+  .pqr{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .sect{
+    background-color: cadetblue;
+    position: relative;
+  }
+  .container2{
+    margin-top: 20px;
+    padding: 40px;
+    /* position:relative; */
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content:center;
+    /* gap: 30px; */
+    background-color: white;
+  }
+  .content{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    margin-bottom: 0px;
+    background: linear-gradient(to bottom, #25063b, #5e075e, #2e064b); 
+     color: white;
+    padding: 20px;
+    height: 260px;
+    
+  }
+  .a {
+    background-color: #ffefef;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .title{
+    font-size: 33px;
+    margin-top: 70px;
+  }
+  
+  
+  .title span {
+    font-size: 33px;
+    color: #fff200;
+    font-weight: 900;
+    
+  
+  }
+  .subtitle {
+    /* font-size: 14px; */
+    /* font-weight: bold; */
+    margin-top: 113px;
+    margin-left: -190px;
+  }  
+
+
+
+
+
+
+
+
+  /* Responsive Styles */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    body{
+      font-family: Arial, sans-serif;
+    }
+    .membership-section h1 {
+      font-size: 45px;
+    }
+  
+    .membership-cards {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+    .classic-card h2 {
+        margin: -46px 0px -0px -210px;
+        
+      }
+  
+    .card, .black-card {
+      width: 70%;
+      margin: 20px 0;
+    }
+  
+    .xyz {
+      flex-direction: column-;
+      font-size: 19px;
+    }
+    .pqr{
+        margin-top: 15px;
+    }
+  
+    .container2 {
+      padding: 20px;
+    }
+  
+    .title, .title span {
+      font-size: 28px;
+    }
+    .dropdown-content img {
+      width: 50%;
+      height: auto;
+    }
+    .imagee{
+      margin-top: 100px;
+  
+    }}
+
+    
+.container2{
+    margin-top: 20px;
+    padding: 40px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    background-color: white;
+     
+  }
+  .a {
+    background-color: white;
+    color: black;
+    padding: 12px 23px;
+    border: 1px solid grey;
+    border-radius: 23px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .a:hover{
+    background-color: #6f0bb6;
+  }
