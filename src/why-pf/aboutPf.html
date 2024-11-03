@@ -9,6 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/footer/footer1.css">
+    <link rel="stylesheet" href="/src/Membership/Navbar/Nav.css">
     <style>
         * {
             font-family: "Poppins", sans-serif;
@@ -25,7 +27,7 @@
      <!------------------------------ Navbar--------------------- -->
   <div id="navbar-placeholder"></div>
 
-    <div class="mt-10 md:mt-20 overflow-hidden">
+    <div class="mt-20 md:mt-20 overflow-hidden">
         <div class="px-6 py-4 md:mb-5 md:mx-20 text-4xl sm:text-5xl md:text-7xl font-bold ">
             <span class="text-purple-700">About </span>Planet Fitness
         </div>
@@ -132,9 +134,9 @@
       <!-- Footer Content -->
   <div id="footer-placeholder"></div>
 
-  <!-- <script>
+  <script>
     //  Navbar -----------------------
-    fetch('/src/navbar/Nav.html')
+    fetch('/src/Membership/Navbar/Nav.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
@@ -142,13 +144,13 @@
       .catch(error => console.error('Error loading navbar:', error));
 
     // footer
-    fetch('/src/footer/index.html')
+    fetch('/src/footer/footer1.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       })
       .catch(error => console.error('Error loading footer:', error));
-  </script> -->
+  </script>
 </body>
 
 </html>
