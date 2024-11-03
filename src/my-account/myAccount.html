@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/pf-icon.ico" type="image/x-icon">
+    <title>My Account | Planet Fitness</title>
+    <link rel="stylesheet" href="./styles/myAccount.css">
+    <link rel="stylesheet" href="../output.css">
+    <script src="./scripts/myAccount.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a href="#">Find a Club</a></li>
+            <li><a href="#">About Planet Fitness</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+
+            <button class="account-btn">My Account</button>
+
+            <select class="language-select">
+                <option value="en"> US (English)</option>
+                <option value="es">US (Spanish)</option>
+                <option value="es">Canada (English)</option>
+                <option value="es">Panama (Spanish)</option>
+                <option value="es">Mexico (Spanish)</option>
+                <option value="es">Australia (English)</option>
+                <option value="es">Spain (Spanish)</option>
+            </select>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button" onclick="search()">🔍 Search</button>
+            </div>
+
+            <button class="join-btn">Join Us</button>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu">
+
+        <div class="menu-close">
+            <button id="close-btn">X</button>
+        </div>
+
+        <nav>
+            <a href="#">Find a Club</a>
+            <a href="#">About Planet Fitnesse</a>
+
+            <div class="flag-container">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+                    alt="US Flag">
+
+                <!-- <span>Region: US (English)</span> -->
+
+                <select class="language-select">
+                    <option value="en">Region: US (English)</option>
+                    <option value="es">US (Spanish)</option>
+                    <option value="es">Canada (English)</option>
+                    <option value="es">Panama (Spanish)</option>
+                    <option value="es">Mexico (Spanish)</option>
+                    <option value="es">Australia (English)</option>
+                    <option value="es">Spain (Spanish)</option>
+                </select>
+            </div>
+
+            <a href="#" class="account">My Account</a>
+            <!-- <a href="#" class="help">Need Help?</a> -->
+        </nav>
+    </div>
+
+    </nav>
+
+    <main>
+
+        <div class="main-top-box">
+            <div class="overlay">
+
+                <div class="top-box-1">
+                    <div class="back-link">
+                        <a href="#"><span>&larr;</span> Home</a>
+                    </div>
+                </div>
+
+                <div class="top-box m-auto">
+                    <div class="header-content">
+                        <h1 class="text-start box-font-family-2 box-font-800">MY ACCOUNT</h1>
+                        <p class="box-font-family-1 box-font-400">Your one stop for all your membership needs such as
+                            changing clubs,
+                            billing, upgrades and
+                            more!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="container-box m-auto">
+
+                <h1 class="mt-4 box-h1 box-font-family-2 box-font-800">
+                    YOUR PLANET FITNESS ACCOUNT
+                </h1>
+
+                <div class="card-grid">
+
+                    <div class="card">
+                        <h2>ACCESS YOUR MEMBERSHIP
+                            <span class="h2-span">&rarr;</span>
+                        </h2>
+                        <hr class="mt-2">
+                        <p class="mt-4">Need to upgrade, change club locations, make other changes to your
+                            membership, or
+                            contact your
+                            club? We make it easy - just sign in to get started!</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>PF WELCOME BOOKLET
+                            <span class="h2-span">&rarr;</span>
+                        </h2>
+                        <hr class="mt-2">
+                        <p class="mt-4">No need to be gymtimidated. We have a guide to help you get started, keep going
+                            and
+                            celebrate
+                            every step.</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>PF MEMBERSHIP PERKS
+                            <span class="h2-span">&rarr;</span>
+                        </h2>
+                        <hr class="mt-2">
+                        <p class="mt-4">Want discounts and special offers from our awesome partners? Tons of perk-fect
+                            deals
+                            just for
+                            you!
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h2>FREQUENTLY ASKED QUESTIONS
+                            <span class="h2-span">&rarr;</span>
+                        </h2>
+                        <hr class="mt-2">
+                        <p class="mt-4">Still need help? We're always here for you. Check out our frequently asked
+                            questions
+                            and
+                            additional member resources.</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>VIEW & UPDATE RECORDS
+                            <span class="h2-span">&rarr;</span>
+                        </h2>
+                        <hr class="mt-2">
+                        <p class="mt-4">Access to your contact information, membership agreement, billing information
+                            and
+                            check-in
+                            history.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-box mt-8">
+
+            <div class="footer-font-1">
+                <div class="footer-link-box m-auto">
+                    <a href="#top" class="back-to-top ">BACK TO TOP
+                        <span class="span-symbol-1">&nbsp;&uarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="footer-top-box m-auto p-8">
+                    <div class="footer-top-box-content footer-font-2">
+                        <div>
+                            <a href="">Find a Club</a>
+                        </div>
+                        <div>
+                            <a href="">Blog</a>
+                        </div>
+                        <div>
+                            <a href="">About Planet Fitness</a>
+                        </div>
+                        <div>
+                            <a href="">Careers</a>
+                        </div>
+                        <div>
+                            <a href="">Memberships</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="">
+                <div class="footer-top-box-2 m-auto p-8">
+                    <div class="footer-top-box-content footer-font-3">
+                        <div>
+                            <a href="">Newsroom</a>
+                        </div>
+                        <div>
+                            <a href="">PF Store</a>
+                        </div>
+                        <div>
+                            <a href="">Franchising</a>
+                        </div>
+                        <div>
+                            <a href="">Customer Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr-border mt-4"></div>
+
+            <div class="footer-box-down m-auto mt-10">
+
+                <div class="footer-box-down-left ml-0">
+                    <div class="footer-box-down-left-top">
+                        <div>
+                            <a href="">Privacy Policy</a>
+                        </div>
+                        <div>
+                            <a href="">Terms and Conditions of Use</a>
+                        </div>
+                        <div>
+                            <a href="">Investor Relations</a>
+                        </div>
+                        <div>
+                            <a href="">Site Map</a>
+                        </div>
+                    </div>
+                    <div class="footer-box-down-left-top mt-6">
+                        <div>
+                            <a href="">Do Not Sell or Share My Personal Information</a>
+                        </div>
+                        <div>
+                            <a href="">Your State and EU Privacy Rights</a>
+                        </div>
+                        <div>
+                            <a href="">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-box-down-right footer-margin-left">
+
+                    <div class="footer-box-down-right-top">
+                        <div class="footer-margin-logo">
+                            <div><img src="./assets/social-media-icons/linkedin-icon.png" alt="">
+                            </div>
+                            <div><img src="./assets/social-media-icons/facebook-icon.png" alt="">
+                            </div>
+                            <div><img src="./assets/social-media-icons/instagram-icon.png" alt="">
+                            </div>
+                            <div><img src="./assets/social-media-icons/tiktok-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-box-down-right-down footer-copyright mb-8 pb-4">
+                        Copyright © 1997 - 2024 Planet Fitness Franchising, LLC.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

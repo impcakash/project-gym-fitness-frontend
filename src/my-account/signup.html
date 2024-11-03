@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/pf-icon.ico" type="image/x-icon">
+    <title>Sign Up | Planet Fitness</title>
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="../output.css">
+    <script src="./scripts/signup.js" defer></script>
+
+    <style gf-font-style="'Barlow Condensed':400">
+        @font-face {
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xHT2lv0tKk.woff2) format('woff2'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTx3L3I-JCGChYJ8VI-L6OO_au7B2xU.woff) format('woff');
+            unicode-range: U+0000-00FF, U-02BC;
+        }
+
+        @font-face {
+            font-family: 'Barlow Condensed';
+            font-style: normal;
+            font-weight: 600;
+            font-display: swap;
+            src: local('Barlow Condensed SemiBold'),
+                local('BarlowCondensed-SemiBold'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873z3bWuYMBYro.woff2) format('woff2'),
+                url(https://fonts.gstatic.com/s/barlowcondensed/v5/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873_3I.woff) format('woff');
+            unicode-range: U+0000-00FF, U-02BC;
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            font-style: normal;
+            font-weight: 800;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/robotoslab/v12/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2RlV9Su1cai.woff) format('woff');
+            unicode-range: U+0000-00FF;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <div class="mx-auto mt-12 w-4/12 box-width box-height pb-12">
+
+            <div class="w-20 m-auto">
+                <img class="" src="assets/pf-logo.png" alt="brand-logo">
+            </div>
+
+            <h1 class="text-center mt-8 box-title">SIGN UP</h1>
+
+            <p class="text-center box-text-details mt-4">Let's get started by entering details!</p>
+
+            <div class="m-auto mt-8 box-width-2">
+                <form action="">
+                    <div class="box-margin">
+                        <label>First Name</label><br>
+                        <input class="box-control" type="text" required>
+                    </div>
+                    <div class="box-margin">
+                        <label>Last Name</label><br>
+                        <input class="box-control" type="text" required>
+                    </div>
+                    <div class="box-margin">
+                        <label>Email</label><br>
+                        <input class="box-control" type="email" required>
+                    </div>
+                    <div class="box-margin">
+                        <label>Create Password</label><br>
+                        <input class="box-control" type="password" required>
+                    </div>
+                    <!-- <div class="box-margin">warning</div> -->
+
+                    <div class="mt-4 box-width-3 mx-auto grid grid-cols-2">
+                        <div>Eight characters minimum</div>
+                        <div>One number</div>
+                        <div>One lower case character</div>
+                        <div>One special character</div>
+                        <div>One uppercase character</div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button class="btn-primary">
+                            Next
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
