@@ -188,17 +188,16 @@
   }
     
   .card {
-    background-color: white;
-    color: black;
+    background-color: #6a0dad; /* Dark purple background for contrast */
+    color: white; /* White font color */
     width: 430px;
     margin: 15px;
-    padding: 45px ;
+    padding: 45px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: Arial, sans-serif;
-   
-  }
-  
+}
+
   .black-card {
     background-color: #4b0082;
     color: white;

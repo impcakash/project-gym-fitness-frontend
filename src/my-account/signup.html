@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/pf-icon.ico" type="image/x-icon">
-    <title>Sign In | Planet Fitness</title>
-    <link rel="stylesheet" href="./styles/signin.css">
+    <title>Sign Up | Planet Fitness</title>
+    <link rel="stylesheet" href="./styles/signup.css">
     <link rel="stylesheet" href="../output.css">
-    <script src="./scripts/signin.js" defer></script>
+    <script src="./scripts/signup.js" defer></script>
 
     <style gf-font-style="'Barlow Condensed':400">
         @font-face {
@@ -46,45 +46,54 @@
 </head>
 
 <body>
-    <div class="">
 
-        <div class="m-auto mt-12 w-4/12 box-width box-height">
+    <div>
+
+        <div class="mx-auto mt-12 w-4/12 box-width box-height pb-12">
 
             <div class="w-20 m-auto">
-                <img class="" src="./assets/pf-logo.png" alt="brand-logo">
+                <img class="" src="assets/pf-logo.png" alt="brand-logo">
             </div>
 
-            <h1 class="text-center mt-8 box-title">SIGN IN</h1>
+            <h1 class="text-center mt-8 box-title">SIGN UP</h1>
+
+            <p class="text-center box-text-details mt-4">Let's get started by entering details!</p>
 
             <div class="m-auto mt-8 box-width-2">
                 <form action="">
                     <div class="box-margin">
-                        <label>Enter your email</label><br>
+                        <label>First Name</label><br>
+                        <input class="box-control" type="text" required>
+                    </div>
+                    <div class="box-margin">
+                        <label>Last Name</label><br>
+                        <input class="box-control" type="text" required>
+                    </div>
+                    <div class="box-margin">
+                        <label>Email</label><br>
                         <input class="box-control" type="email" required>
                     </div>
                     <div class="box-margin">
-                        <label>Enter your password</label><br>
+                        <label>Create Password</label><br>
                         <input class="box-control" type="password" required>
                     </div>
-                    <div class="box-margin">warning</div>
+                    <!-- <div class="box-margin">warning</div> -->
+
+                    <div class="mt-4 box-width-3 mx-auto grid grid-cols-2">
+                        <div>Eight characters minimum</div>
+                        <div>One number</div>
+                        <div>One lower case character</div>
+                        <div>One special character</div>
+                        <div>One uppercase character</div>
+                    </div>
+
                     <div class="mt-8">
                         <button class="btn-primary">
-                            Continue
+                            Next
                         </button>
                     </div>
                 </form>
             </div>
-
-            <div class="mt-8 text-center">
-                <div class="box-font box-font-color">Forgot password?</div>
-                <div class="mt-6 box-font">Don't have an account?
-                    <span class="box-font-color">
-                        <a href="">Sign Up</a>
-                    </span>
-                </div>
-            </div>
-
-
         </div>
     </div>
 </body>
