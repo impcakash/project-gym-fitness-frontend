@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/pf-icon.ico" type="image/x-icon">
+    <title>Careers | Planet Fitness</title>
+    <link rel="stylesheet" href="./styles/careers.css">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="navbar-logo">
+            <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a href="#">Find a Club</a></li>
+            <li><a href="#">About Planet Fitness</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+
+            <button class="account-btn">My Account</button>
+
+            <select class="language-select">
+                <option value="en"> US (English)</option>
+                <option value="es">US (Spanish)</option>
+                <option value="es">Canada (English)</option>
+                <option value="es">Panama (Spanish)</option>
+                <option value="es">Mexico (Spanish)</option>
+                <option value="es">Australia (English)</option>
+                <option value="es">Spain (Spanish)</option>
+            </select>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button" onclick="search()">🔍 Search</button>
+            </div>
+
+            <button class="join-btn">Join Us</button>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu">
+
+        <div class="menu-close">
+            <button id="close-btn">X</button>
+        </div>
+
+        <nav>
+            <a href="#">Find a Club</a>
+            <a href="#">About Planet Fitnesse</a>
+
+            <div class="flag-container">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+                    alt="US Flag">
+
+                <!-- <span>Region: US (English)</span> -->
+
+                <select class="language-select">
+                    <option value="en">Region: US (English)</option>
+                    <option value="es">US (Spanish)</option>
+                    <option value="es">Canada (English)</option>
+                    <option value="es">Panama (Spanish)</option>
+                    <option value="es">Mexico (Spanish)</option>
+                    <option value="es">Australia (English)</option>
+                    <option value="es">Spain (Spanish)</option>
+                </select>
+            </div>
+
+            <a href="#" class="account">My Account</a>
+            <!-- <a href="#" class="help">Need Help?</a> -->
+
+        </nav>
+    </div>
+
+    </nav>
+
+    <main>
+
+        <div class="main-top-box">
+            <div class="overlay">
+
+                <div class="top-box-1">
+                    <div class="back-link">
+                        <a href="#"><span>&larr;</span> Home</a>
+                    </div>
+                </div>
+
+                <div class="top-box m-auto">
+
+                    <div class="header-content">
+
+                        <h1 class="text-center box-font-family-2 box-font-800">YOU BELONG AT PLANET FITNESS</h1>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container mb-12">
+            <div class="container-box m-auto">
+
+                <h1 class="mt-4 box-h1 box-font-family-2 box-font-800">
+                    FIND YOUR PERFECT FIT
+                </h1>
+
+                <div class="card-grid">
+                    <div class="card">
+
+                        <div class="font-roboto card-heading">WORLD HQ OPPORTUNITIES</div>
+
+                        <div class="mt-4"><img src="./assets/careers/PFHQ-exterior.jpg" alt=""></div>
+
+                        <p class="font-barlow card-text">Work hard and play hard with an amazing group of talented,
+                            dynamic
+                            professionals! Our people
+                            are vital to our success. We're always expanding and looking for talented, passionate
+                            individuals to join our team. Franchises are solely responsible for all decisions related to
+                            employment. Click above to learn more about our corporate headquarters and
+                            culture and to view open positions.</p>
+
+                        <div class="font-barlow mt-8 card-button">View Opportunities</div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="font-roboto card-heading">IN-CLUB OPPORTUNITIES</div>
+
+                        <div class="mt-4"><img src="./assets/careers/Planet-Fitness-Front-Desk.jpg" alt=""></div>
+
+                        <p class="font-barlow card-text">Be on the front lines of something amazing! Our franchisees
+                            share a
+                            passion for the brand and
+                            for providing great member experiences. With over 2,600+ locations, there's opportunity on
+                            every corner. Most Planet Fitness locations are independently owned and operated franchises.
+                            Click above to learn more about working in a club and view opportunities by location.</p>
+                        <div class="font-barlow mt-8 card-button">View Opportunities</div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-box-1 m-auto mb-24">
+            <div class="font-roboto text-warning-head">HIRING FRAUD ALERT</div>
+            <p class="font-barlow text-warning-detail">Planet Fitness has been made aware of an increasing number of
+                hiring fraud schemes
+                across numerous
+                platforms. For more information on how to avoid hiring fraud, please visit our Hiring-Fraud webpage.</p>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-box">
+
+            <div class="footer-font-1">
+                <div class="footer-link-box m-auto">
+                    <a href="#top" class="back-to-top ">BACK TO TOP
+                        <span class="span-symbol-1">&nbsp;&uarr;</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="footer-top-box m-auto p-8">
+                    <div class="footer-top-box-content footer-font-2">
+                        <div>
+                            <a href="">Find a Club</a>
+                        </div>
+                        <div>
+                            <a href="">Blog</a>
+                        </div>
+                        <div>
+                            <a href="">About Planet Fitness</a>
+                        </div>
+                        <div>
+                            <a href="">Careers</a>
+                        </div>
+                        <div>
+                            <a href="">Memberships</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="">
+                <div class="footer-top-box-2 m-auto p-8">
+                    <div class="footer-top-box-content footer-font-3">
+                        <div>
+                            <a href="">Newsroom</a>
+                        </div>
+                        <div>
+                            <a href="">PF Store</a>
+                        </div>
+                        <div>
+                            <a href="">Franchising</a>
+                        </div>
+                        <div>
+                            <a href="">Customer Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hr-border mt-4"></div>
+
+            <div class="footer-box-down m-auto mt-10">
+
+                <div class="footer-box-down-left ml-0">
+                    <div class="footer-box-down-left-top">
+                        <div>
+                            <a href="">Privacy Policy</a>
+                        </div>
+                        <div>
+                            <a href="">Terms and Conditions of Use</a>
+                        </div>
+                        <div>
+                            <a href="">Investor Relations</a>
+                        </div>
+                        <div>
+                            <a href="">Site Map</a>
+                        </div>
+                    </div>
+                    <div class="footer-box-down-left-top mt-6">
+                        <div>
+                            <a href="">Do Not Sell or Share My Personal Information</a>
+                        </div>
+                        <div>
+                            <a href="">Your State and EU Privacy Rights</a>
+                        </div>
+                        <div>
+                            <a href="">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-box-down-right footer-margin-left">
+
+                    <div class="footer-box-down-right-top">
+                        <div class="footer-margin-logo">
+                            <div><img src="./assets/social-media-icons/linkedin-icon.png" alt="">
+                            </div>
+                            <div><img src="./assets/social-media-icons/facebook-icon.png" alt="">
+                            </div>
+                            <div><img src="./assets/social-media-icons/instagram-icon.png" alt="">
+                            </div>
+                            <div><img src="./assets/social-media-icons/tiktok-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-box-down-right-down footer-copyright mb-8 pb-4">
+                        Copyright © 1997 - 2024 Planet Fitness Franchising, LLC.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+
+<script>
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    menuToggle.addEventListener("click", () => {
+        hamburgerMenu.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+        hamburgerMenu.style.display = "none";
+    });
+
+    function search() {
+        const searchContainer = document.querySelector('.search-container');
+        const searchInput = document.getElementById('search-input');
+
+        if (searchContainer.classList.contains('active')) {
+            alert(`Searching for: ${searchInput.value}`);
+            searchInput.value = '';
+        } else {
+            searchContainer.classList.add('active');
+            searchInput.style.display = 'block';
+            searchInput.focus();
+        }
+    }
+
+</script>
+
+</html>
