@@ -660,7 +660,7 @@ body{
       
     }
      .btun3{
-  
+        
      }
     .text-section button:hover {
       background-color: #50459d;
@@ -816,12 +816,12 @@ body{
     border: none;
     border-radius: 0 30px 30px 0;
     cursor: pointer;
-     margin-left: 268px;
+     margin-left: 28px;
     font-size: 18px;
   }
   .search-box button:hover {
       background-color: #3b3b7d;
-  } */
+  } 
   .end{
     padding: 50px;
     padding-right: 15%;
@@ -902,22 +902,7 @@ body{
       padding-top: 10px;
       padding-left: 220px;
     margin-right: 300px;;
-    }
-  /* ............................................ */
-    
-  /* 
-  
-  .faq-answer {
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    font-size:20px;
-    color: #555;
-    padding-top: 10px;
-    padding-left: 220px;
-    margin-right: 300px;
-    line-height: 45px;
-  } */
-  
+    }  
    /* .................................. */
     .faq-item.active .faq-answer {
       max-height: 100px; /* Adjust this to fit the content */
@@ -929,11 +914,11 @@ body{
   
     .more-questions-btn {
       display: block;
-      width: 17%;
+      width: 5%;
       padding: 18px 0;
       background-color: #44086f;
       color: #fff;
-       margin-left: 19em;
+      margin-left: 19em;
       font-size: 1.2rem;
       border: none;
       border-radius: 25px;
