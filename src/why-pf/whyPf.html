@@ -9,6 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/footer/footer1.css">
+    <link rel="stylesheet" href="/src/Membership/Navbar/Nav.css">
     <style>
         * { 
             font-family: "Poppins", sans-serif;
@@ -20,7 +22,7 @@
      <!------------------------------ Navbar--------------------- -->
   <div id="navbar-placeholder"></div>
 
-    <div class="bg-white overflow-hidden">
+    <div class="bg-white overflow-hidden mt-20">
         <div class="px-6 py-4 md:mb-5 md:mx-20">
             <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold text-black">Welcome to the</h1>
             <h2 class="text-4xl sm:text-5xl md:text-7xl font-bold text-purple-700">Judgement Free Zone®</h2>
@@ -247,30 +249,34 @@
         class="flex flex-col md:flex-row justify-center text-center bg-purple-50 text-black text-lg font-semibold space-x-4 lg:space-x-8 pb-20 ">
         <div class="flex flex-col items-center bg-white m-2 px-20 py-3 rounded-2xl shadow-xl ">
             <!-- Icon Placeholder -->
+             <a href="/">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="h-16 text-purple-700">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
+             </a>
             <p>Find a Club Near You</p>
         </div>
         <div class="flex flex-col items-center bg-white m-2  px-28 py-3 rounded-2xl shadow-xl ">
             <!-- Icon Placeholder -->
+            <a href="/src/why-pf/MembershipPerk.html">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="h-16 text-purple-700">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-            </svg>
+            </svg></a>
             <p>Explore Perks</p>
         </div>
         <div class="flex flex-col items-center bg-white m-2 px-24 py-3 rounded-2xl shadow-xl  ">
             <!-- Icon Placeholder -->
+            <a href="/">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="h-16 text-purple-700">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
-            </svg>
+            </svg></a>
             <p>Take a Virtual Tour</p>
         </div>
     </div>
@@ -299,9 +305,9 @@
       <!-- Footer Content -->
   <div id="footer-placeholder"></div>
 
-  <!-- <script>
+  <script>
     //  Navbar -----------------------
-    fetch('/src/navbar/Nav.html')
+    fetch('/src/Membership/Navbar/Nav.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
@@ -309,13 +315,13 @@
       .catch(error => console.error('Error loading navbar:', error));
 
     // footer
-    fetch('/src/footer/index.html')
+    fetch('/src/footer/footer1.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
       })
       .catch(error => console.error('Error loading footer:', error));
-  </script> -->
+  </script>
 
 </body>
 
