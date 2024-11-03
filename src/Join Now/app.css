@@ -29,8 +29,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-right: 320px;
+    gap: 25px;
+    margin-right: 200px;
     font-size: 20px;
 }
 
@@ -41,7 +41,7 @@ body{
 .navbar-menu a {
     color: black;
     text-decoration: none;
-    padding: 8px;
+    padding: 20px;
     
 }
 
@@ -165,7 +165,7 @@ body{
 .container {
     /* max-width: 400px;
     width: 90%; */
-    margin: 140px 0px 0px 260px;
+    margin: 140px 0px 0px 0px;
     display: flex;
 }
 
@@ -173,8 +173,9 @@ body{
 display: flex;
 flex-direction: column;
 gap: 15px;
-margin-bottom: 49vh;
-padding-bottom: -90px;
+margin-bottom: 43vh;
+padding-bottom: -80px;
+margin-left: 110px;
 
 }
 
@@ -199,28 +200,30 @@ font-size: 22px;
 .message {
 color: #333;
 margin-top: 20vh;  
-margin-left: -200px;
+margin-left: -260px;
 }
 
 h2 {
 font-size: 35px;
 /* padding: 3px; */
 margin-top: 80px;  
-margin-left: -380px;
+margin-left: -90px;
 }
 
 p {
 font-size: 21px;
 color: #666;
 margin-top: 20px;  
-margin-left: -250px;
-padding-right: 20px;
+margin-left: -150px;
+padding-right: 270px;
 } 
 
 .map {
     display: flex;
     justify-content: end;
     position: static;
+    padding-left: 90px;
+    margin-top: -6%;
 
 }
 
@@ -292,4 +295,5 @@ padding-right: 20px;
         
         }
 }
+
 
