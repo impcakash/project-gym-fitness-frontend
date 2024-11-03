@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+
+    <!-- NAV BAR -->
+    <nav class="navbar">
+
+        <div class="navbar-logo" style="z-index: 10px;">
+            <img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg" alt="Planet Fitness Logo">
+        </div>
+
+        <ul class="navbar-menu">
+            <li><a href="#">Find a Club</a></li>
+            <li><a href="#">About Planet Fitness</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+
+            <button class="account-btn">My Account</button>
+
+            <select class="language-select">
+                <option value="en"> US (English)</option>
+                <option value="es">US (Spanish)</option>
+                <option value="es">Canada (English)</option>
+                <option value="es">Panama (Spanish)</option>
+                <option value="es">Mexico (Spanish)</option>
+                <option value="es">Australia (English)</option>
+                <option value="es">Spain (Spanish)</option>
+            </select>
+
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button" onclick="search()">🔍 Search</button>
+            </div>
+
+            <button class="join-btn">Join Us</button>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu">
+
+        <div class="menu-close">
+            <button id="close-btn">X</button>
+        </div>
+
+        <nav>
+            <a href="#">Find a Club</a>
+            <a href="#">About Planet Fitnesse</a>
+
+            <div class="flag-container">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+                    alt="US Flag">
+
+                <!-- <span>Region: US (English)</span> -->
+
+                <select class="language-select">
+                    <option value="en">Region: US (English)</option>
+                    <option value="es">US (Spanish)</option>
+                    <option value="es">Canada (English)</option>
+                    <option value="es">Panama (Spanish)</option>
+                    <option value="es">Mexico (Spanish)</option>
+                    <option value="es">Australia (English)</option>
+                    <option value="es">Spain (Spanish)</option>
+                </select>
+            </div>
+
+            <a href="#" class="account">My Account</a>
+            <!-- <a href="#" class="help">Need Help?</a> -->
+
+        </nav>
+    </div>
+
+    </nav>
+
+</body>
+
+<script>
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    menuToggle.addEventListener("click", () => {
+        hamburgerMenu.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+        hamburgerMenu.style.display = "none";
+    });
+
+    function search() {
+        const searchContainer = document.querySelector('.search-container');
+        const searchInput = document.getElementById('search-input');
+
+        if (searchContainer.classList.contains('active')) {
+            alert(`Searching for: ${searchInput.value}`);
+            searchInput.value = '';
+        } else {
+            searchContainer.classList.add('active');
+            searchInput.style.display = 'block';
+            searchInput.focus();
+        }
+    }
+
+</script>
+
+    <!-- Cover Image Section -->
+    <div class="image-container">
+        <img src="abc.webp" alt="Gym Blog Image">
+        <div class="text-overlay">
+            <h1>BLOG</h1>
+            <p>Your source for workout suggestions, healthy lifestyle tips, fitness advice, and more.</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container">
+        <div class="trending">
+            <img src="Img1.png" alt="Smith Machine">
+            <div class="trending-content">
+                <h2>TRENDING</h2>
+                <a href="#">A Beginner’s Guide to the Smith Machine Bench Press</a>
+            </div>
+        </div>
+        
+        <div class="most-liked">
+            <h3>Most Liked</h3>
+            <div class="liked-item">
+                <a href="#">WORKOUT ESSENTIALS: WHAT TO BRING TO THE GYM</a>
+            </div>
+            <div class="liked-item">
+                <a href="#">3 Exercises That Minimize Joint Pressure</a>
+            </div>
+            <div class="liked-item">
+                <a href="#">The Beginner Upper-Body Workout You've Been Looking For</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container cards">
+        <div class="card">
+            <img src="Img2.png" alt="Leg Press Machine">
+            <div class="card-content">
+                <h3>A Beginner’s Guide to the Leg Press Machine</h3>
+                <p>Your leg muscles are the unsung heroes of many everyday activities. From your first foot on the floor in the morning, to rolling into bed at night, those limbs are always working overtime. Give these muscles the love they deserve with this comprehensive beginner's guide to the leg press machine.</p>
+                <a href="https://www.planetfitness.com/community/articles/leg-press-machine-guide" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img3.png" alt="Shoulder Exercises">
+            <div class="card-content">
+                <h3>8 Best Shoulder Exercises: A Beginner's Guide</h3>
+                <p>The shoulder muscles. Often overlooked and underused, these muscles hold a ton of tension for most of us, especially with so many hours spent hunched over our computer and phone screens.</p>
+                <a href="https://www.planetfitness.com/community/articles/best-shoulder-exercises-for-beginners" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img4.png" alt="Workout Playlist">
+            <div class="card-content">
+                <h3>20 of the Best Workout Songs for Your Gym Playlist</h3>
+                <p>In the pulsating world of fitness, where every beat counts, your choice of music can make or break your workout. But the perfect gym playlist isn’t just about catchy tunes—though that certainly helps!</p>
+                <a href="https://www.planetfitness.com/community/articles/best-workout-songs-for-your-gym-playlist" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container cards">
+        <div class="card">
+            <img src="Img5.png" alt="Leg Press Machine">
+            <div class="card-content">
+                <h3>Finding an Affordable Gym Near You: Considerations Before You Choose</h3>
+                <p>It can be tricky to locate a gym that fits your workout needs and budget. Not every affordable gym option has the best value, so how do you find the right one?
+                    <br>
+                    <br>
+                    Don’t worry—we’ve got you covered. In this guide, we’ll help you understand how much it costs to go to the gym, as well as how to get the most value out of an affordable gym membership.</p>
+                <a href="https://www.planetfitness.com/community/articles/leg-press-machine-guide" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img6.png" alt="Shoulder Exercises">
+            <div class="card-content">
+                <h3>What is Progressive Overload? A Beginner’s Guide</h3>
+                <p>If you’ve ever heard the term “progressive overload” and wondered what progressive overload is, you’re not alone. This type of training has recently caught the spotlight as a crucial step in fitness and strength training.
+                    <br>
+                    <br>
+                    But what is it, exactly?</p>
+                <a href="https://www.planetfitness.com/community/articles/progressive-overload-beginners-guide" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img7.png" alt="Workout Playlist">
+            <div class="card-content">
+                <h3>Tips for Maintaining Motivation and Building Workout Consistency in the Gym</h3>
+                <p>Building consistency in the gym is the key to progress. The tricky part is maintaining the motivation you need to stay on track. That’s why we’ve created the ultimate guide to building consistency in your workouts in the gym and at home.</p>
+                <a href="https://www.planetfitness.com/community/articles/workout-consistency-in-the-gym" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container cards">
+        <div class="card">
+            <img src="Img8.png" alt="Leg Press Machine">
+            <div class="card-content">
+                <h3>Combining Ozempic, Exercise, and Nutrition for Well-Rounded Fitness</h3>
+                <p>In recent years, there has been growing interest around GLP-1 medications like Ozempic, which are prescribed for diabetes but often promote a noticeable side effect of weight loss.  Ozempic and other GLP-1 medications can be beneficial for many individuals—under the advisement of a healthcare professional. However, it’s important to remember that achieving full-body wellness requires a well-rounded approach.</p>
+                <a href="https://www.planetfitness.com/community/articles/ozempic-exercise-diet" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img9.png" alt="Shoulder Exercises">
+            <div class="card-content">
+                <h3>Time-Friendly Fitness: The Advantages of Gyms with Flexible Hours</h3>
+                <p>Finding a gym that can fit your busy schedule is so important when trying to make time to work out! Flexible-hour fitness centers provide the same benefits as traditional gyms but offer the freedom to work out whenever it suits your schedule.</p>
+                <a href="https://www.planetfitness.com/community/articles24-hour-gyms-flexible-hours" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img10.png" alt="Workout Playlist">
+            <div class="card-content">
+                <h3>What is HydroMassage™ and Its Benefits?</h3>
+                <p>Wellness isn’t just about working out, and your path to well-being should be as relaxing as it is invigorating. That's where recovery activities like massage therapy—and more specifically, HydroMassage™—come i</p>
+                <a href="https://www.planetfitness.com/community/articles/hydromassage" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container cards">
+        <div class="card">
+            <img src="Img11.png" alt="Leg Press Machine">
+            <div class="card-content">
+                <h3>Beginner’s Guide to the 12-3-30 Workout</h3>
+                <p>The 12-3-30 treadmill workout has taken the fitness world by storm, offering a simple yet effective treadmill routine. This simple treadmill workout, dubbed the 12-3-30 workout, gained popularity on social media, particularly on TikTok.</p>
+                <a href="https://www.planetfitness.com/community/articles/12-3-30-workout" class="read-more">Read more</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="Img12.png" alt="Shoulder Exercises">
+            <div class="card-content">
+                <h3>10 Dynamic Stretches for Any Workout</h3>
+                <p>There’s a new warm-up in town that’s making itself known. If you haven’t yet heard, dynamic stretching exercises are a way to make the most out of your workout and enhance overall performance. And there are a TON of benefits that this type of warm-up has to offer!</p>
+                <a href="https://www.planetfitness.com/community/articles/dynamic-stretches-workout" class="read-more">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer style="width: 100%; margin: 0; padding: 0;">
+    <div class="footer-box" style="margin: 0;"> <!-- Remove margins from this div as well -->
+        <div class="footer-font-1">
+            <div class="footer-link-box m-auto">
+                <a href="#top" class="back-to-top">BACK TO TOP
+                    <span class="span-symbol-1">&nbsp;&uarr;</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="footer-top-box m-auto p-8">
+                <div class="footer-top-box-content footer-font-2">
+                    <div>
+                        <a href="">Find a Club</a>
+                    </div>
+                    <div>
+                        <a href="">Blog</a>
+                    </div>
+                    <div>
+                        <a href="">About Planet Fitness</a>
+                    </div>
+                    <div>
+                        <a href="">Careers</a>
+                    </div>
+                    <div>
+                        <a href="">Memberships</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="footer-top-box-2 m-auto p-8">
+                <div class="footer-top-box-content footer-font-3">
+                    <div>
+                        <a href="">Newsroom</a>
+                    </div>
+                    <div>
+                        <a href="">PF Store</a>
+                    </div>
+                    <div>
+                        <a href="">Franchising</a>
+                    </div>
+                    <div>
+                        <a href="">Customer Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hr-border mt-4"></div>
+
+        <div class="footer-box-down m-auto mt-10 pb-8">
+            <div class="footer-box-down-left ml-0">
+                <div class="footer-box-down-left-top">
+                    <div>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="">Terms and Conditions of Use</a>
+                    </div>
+                    <div>
+                        <a href="">Investor Relations</a>
+                    </div>
+                    <div>
+                        <a href="">Site Map</a>
+                    </div>
+                </div>
+                <div class="footer-box-down-left-top mt-6">
+                    <div>
+                        <a href="">Do Not Sell or Share My Personal Information</a>
+                    </div>
+                    <div>
+                        <a href="">Your State and EU Privacy Rights</a>
+                    </div>
+                    <div>
+                        <a href="">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-box-down-right footer-margin-left">
+                <div class="footer-box-down-right-top">
+                    <div class="margin-logo-box">
+                        <div><img src="./social-media-icons/linkedin-icon.png" alt=""></div>
+                        <div><img src="./social-media-icons/facebook-icon.png" alt=""></div>
+                        <div><img src="./social-media-icons/instagram-icon.png" alt=""></div>
+                        <div><img src="./social-media-icons/tiktok-icon.png" alt=""></div>
+                    </div>
+                </div>
+
+                <div class="footer-box-down-right-down footer-copyright">
+                    Copyright © 1997 - 2024 Planet Fitness Franchising, LLC.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

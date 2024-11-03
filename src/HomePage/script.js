@@ -41,3 +41,5 @@ function downloadApp() {
     alert("Redirecting to app download page...");
     window.location.href = "https://yourappdownloadlink.com"; // Replace with actual app download link
 }
+
+// ((((****)))))Second time slider
