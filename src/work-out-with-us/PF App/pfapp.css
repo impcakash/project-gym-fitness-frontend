@@ -592,10 +592,10 @@ body {
   padding-left: 2rem;
 }
 
-h1 {
+.content4 h1 {
   font-size: 3.5rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color:  #14142B;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -670,7 +670,7 @@ h1 {
   padding-right: 2rem;
 }
 
-h1 {
+.content5 h1 {
   font-size: 3.5rem;
   font-weight: 900;
   color: #14142B;
@@ -883,10 +883,10 @@ h1 {
   padding-left: 2rem;
 }
 
-h1 {
+.content8 h1 {
   font-size: 3.5rem;
   font-weight: 900;
-  color: #1a1a1a;
+  color:  #14142B;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -1009,7 +1009,7 @@ h1 {
 .section-title {
   font-size: 3.5rem;
   font-weight: 900;
-  color: #1a1a1a;
+  color: #14142B;
   text-align: center;
   margin-bottom: 3rem;
 }
