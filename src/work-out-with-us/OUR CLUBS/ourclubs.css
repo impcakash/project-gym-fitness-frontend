@@ -403,11 +403,17 @@ section {
     width: 100%;
     background-color: #ddd;
 }
+#equipment-image {
+    max-width: 100%;        /* Ensure the image is responsive */
+    height: auto;           /* Maintain aspect ratio */
+    display: block;         /* Ensure it is block-level */
+}
 
 .image-section img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    
 }
 
 .details-section {

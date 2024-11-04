@@ -153,8 +153,13 @@ function toggleContent(element, imageSrc = null) {
         }
     }
 }
-const mainImage = document.getElementById('equipment-image');
-mainImage.src = `./assets/${imageName}`;
+function toggleContent(element, imageName) {
+    // Ensure imageName is defined and passed properly when calling this function
+    const imageElement = document.getElementById('equipment-image');
+    if (imageElement) {
+        imageElement.src = `./assets/${imageName}`; // Use imageName here
+    }
+}
 function showMore(element) {
     const additionalContent = element.nextElementSibling;
     const isVisible = additionalContent.style.display === 'block';
