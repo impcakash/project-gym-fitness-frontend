@@ -9,14 +9,17 @@ function pf_signin(e) {
 
     let all_users = JSON.parse(localStorage.getItem("pf_users"));
 
-    all_users.forEach(function (user) {
+    all_users.forEach((user) => {
+
         if (pf_email === user.pf_email && pf_password === user.pf_password) {
             // alert("Login Succesfull");
-            window.location.href = "../../../index.html";
-        } else {
+            window.location.href = "index.html";
+        }
+        else {
             // alert("Invalid credentials !");
-            pf_warning.textContent = "Wrong Credentials!";
-            pf_warning.style.color = "red";
+            window.location.href = "myAccount.html"
+            // pf_warning.textContent = "Wrong Credentials!";
+            // pf_warning.style.color = "red";
         }
     });
 }
