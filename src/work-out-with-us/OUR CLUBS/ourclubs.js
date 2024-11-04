@@ -1,4 +1,10 @@
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('hamburger-menu').style.display = 'flex';
+});
 
+document.getElementById('close-btn').addEventListener('click', () => {
+    document.getElementById('hamburger-menu').style.display = 'none';
+});
 
 function openVideo() {
     const videoModal = document.getElementById("videoModal");
