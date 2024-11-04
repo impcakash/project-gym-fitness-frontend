@@ -6,25 +6,11 @@ html {
     color: rgb(20, 20, 43);
 }
 
-/* .my-nav {
-    height: 130px;
-    background-color: lightgreen;
-} */
-
-/*  */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: Arial, sans-serif; */
 }
-
-/* body {
-    height: 100%;
-    background-color: #fff;
-    font-family: Barlow Condensed;
-} */
 
 .navbar {
     display: flex;
@@ -80,7 +66,6 @@ html {
     display: block;
     width: 210px;
     gap: 10px;
-    /* text-transform: capitalize; */
 
 }
 
