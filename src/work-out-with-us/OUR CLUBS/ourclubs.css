@@ -153,6 +153,12 @@
         display: flex;
     }
 }
+.navbar1{
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center;
+    gap:20px; 
+}
 
 .tab {
     padding: 10px 20px;
@@ -496,6 +502,7 @@ section {
     color: black
         /* Purple color for "with PF" */
 }
+
 
 .fitness-image {
     width: 100%;
