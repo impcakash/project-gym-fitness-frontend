@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutPF</title>
+    <link rel="shortcut icon" href="/src/my-account/assets/pf-icon.ico" type="image/x-icon">
+    <title>About PF | Planet Fitness</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -134,15 +135,18 @@
     <!-- Footer Content -->
     <div id="footer-placeholder"></div>
 
-    <script src="/src/Nav/nav.js"></script>
     <script>
         //  Navbar -----------------------
         fetch('/src/Nav/nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
+                const script = document.createElement('script');
+                script.src = '/src/Nav/nav.js';
+                document.body.appendChild(script);
             })
             .catch(error => console.error('Error loading navbar:', error));
+
 
         // footer
         fetch('/src/footer/footer1.html')

@@ -19,11 +19,12 @@ body {
     background-color: #3c3c3c;
     /* background-color: rgb(70, 69, 67); */
     color: white;
-    height: 12vh;
+    height: 10vh;
 }
 
 .navbar-logo img {
     width: 100px;
+    margin-top: 55px;
 }
 
 .navbar-menu {
@@ -32,6 +33,7 @@ body {
     gap: 40px;
     margin-right: 600px;
     font-size: 20px;
+    padding: 20px 0;
 }
 
 .navbar-menu li {
