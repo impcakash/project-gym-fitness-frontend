@@ -15,6 +15,7 @@
         * {
             font-family: "Poppins", sans-serif;
         }
+
         .back {
             background-image: url('/src/why-pf/assets/nm.jpg');
         }
@@ -22,8 +23,8 @@
 </head>
 
 <body class="bg-gray-100">
-        <!------------------------------ Navbar--------------------- -->
-  <div id="navbar-placeholder"></div>
+    <!------------------------------ Navbar--------------------- -->
+    <div id="navbar-placeholder"></div>
 
     <div class="max-w-7xl mx-auto px-4 py-12">
         <!-- Header -->
@@ -663,7 +664,7 @@
             </div>
         </div>
     </div>
-   
+
     <div
         class="back flex flex-col m-2 md:my-10 md:mx-32 items-center justify-center bg-cover bg-center text-center border border-gray-300 md:px-40 py-2 md:py-28 shadow-lg">
         <!-- Heading -->
@@ -676,25 +677,25 @@
         </button>
     </div>
 
-       <!-- Footer Content -->
-  <div id="footer-placeholder"></div>
-  <script>
-    //  Navbar -----------------------
-    fetch('/src/Nav2/Nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading navbar:', error));
+    <!-- Footer Content -->
+    <div id="footer-placeholder"></div>
+    <script>
+        //  Navbar -----------------------
+        fetch('/src/Nav2/Nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
 
-    // footer
-    fetch('/src/footer/footer1.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
+        // footer
+        fetch('/src/footer/footer1.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 </body>
 
 </html>

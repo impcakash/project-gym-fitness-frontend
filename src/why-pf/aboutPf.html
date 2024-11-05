@@ -10,22 +10,21 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/footer/footer1.css">
-    <link rel="stylesheet" href="/src/Membership/Navbar/Nav.css">
+    <link rel="stylesheet" href="/src/Nav/nav.css">
     <style>
         * {
             font-family: "Poppins", sans-serif;
         }
-        @media(min-width:768px){
-            .banner{
+
+        .banner {
             background-image: url('/src/why-pf/assets/start-fitness-journey.webp');
-            }
         }
     </style>
 </head>
 
 <body>
-     <!------------------------------ Navbar--------------------- -->
-  <div id="navbar-placeholder"></div>
+    <!------------------------------ Navbar--------------------- -->
+    <div id="navbar-placeholder"></div>
 
     <div class="mt-20 md:mt-20 overflow-hidden">
         <div class="px-6 py-4 md:mb-5 md:mx-20 text-4xl sm:text-5xl md:text-7xl font-bold ">
@@ -119,7 +118,8 @@
         </div>
     </div>
 
-    <div class="banner flex flex-col m-2 md:my-20 md:mx-48 items-center justify-center bg-gradient-to-r from-yellow-500 to-purple-800 md:bg-cover md:bg-center text-center border border-gray-300 rounded-3xl md:px-40 py-2 md:py-14 shadow-lg">
+    <div
+        class="banner flex flex-col m-2 md:my-20 md:mx-48 items-center justify-center md:bg-cover md:bg-center text-center border border-gray-300 rounded-3xl md:px-40 py-2 md:py-14 shadow-lg">
         <!-- Heading -->
         <h1 class="text-lg md:text-3xl font-extrabold italic text-white mb-4">
             YOUR FITNESS JOURNEY
@@ -131,26 +131,27 @@
         </button>
     </div>
 
-      <!-- Footer Content -->
-  <div id="footer-placeholder"></div>
+    <!-- Footer Content -->
+    <div id="footer-placeholder"></div>
 
-  <script>
-    //  Navbar -----------------------
-    fetch('/src/Membership/Navbar/Nav.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading navbar:', error));
+    <script src="/src/Nav/nav.js"></script>
+    <script>
+        //  Navbar -----------------------
+        fetch('/src/Nav/nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
 
-    // footer
-    fetch('/src/footer/footer1.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-  </script>
+        // footer
+        fetch('/src/footer/footer1.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 </body>
 
 </html>

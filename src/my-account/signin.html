@@ -53,22 +53,26 @@
         <div class="m-auto mt-12 w-4/12 box-width box-height">
 
             <div class="w-20 m-auto">
-                <img class="" src="./assets/pf-logo.png" alt="brand-logo">
+                <a href="../../index.html">
+                    <img class="" src="./assets/pf-logo.png" alt="brand-logo">
+                </a>
             </div>
 
             <h1 class="text-center mt-8 box-title">SIGN IN</h1>
 
             <div class="m-auto mt-8 box-width-2">
-                <form action="">
+                <form action="" id="pf_myForm" onsubmit="pf_signin(event)">
                     <div class="box-margin">
                         <label>Enter your email</label><br>
-                        <input class="box-control" type="email" required>
+                        <input class="box-control" id="pf_email" type="email" required>
                     </div>
                     <div class="box-margin">
                         <label>Enter your password</label><br>
-                        <input class="box-control" type="password" required>
+                        <input class="box-control" id="pf_password" type="password" required>
                     </div>
-                    <div class="box-margin">warning</div>
+
+                    <div id="pf_warning" class="box-margin"></div>
+
                     <div class="mt-8">
                         <button class="btn-primary">
                             Continue
@@ -78,14 +82,13 @@
             </div>
 
             <div class="mt-8 text-center">
-                <div class="box-font box-font-color">Forgot password?</div>
+                <div class="box-font box-font-color"><a href="./myAccount.html">Forgot password?</a></div>
                 <div class="mt-6 box-font">Don't have an account?
                     <span class="box-font-color">
-                        <a href="">Sign Up</a>
+                        <a href="./signup.html">Sign Up</a>
                     </span>
                 </div>
             </div>
-
 
         </div>
     </div>

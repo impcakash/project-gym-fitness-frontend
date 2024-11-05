@@ -54,7 +54,9 @@
         <div class="mx-auto mt-12 w-4/12 box-width box-height pb-12">
 
             <div class="w-20 m-auto">
-                <img class="" src="assets/pf-logo.png" alt="brand-logo">
+                <a href="../../index.html">
+                    <img class="" src="assets/pf-logo.png" alt="brand-logo">
+                </a>
             </div>
 
             <h1 class="text-center mt-8 box-title">SIGN UP</h1>
@@ -62,7 +64,7 @@
             <p class="text-center box-text-details mt-4">Let's get started by entering details!</p>
 
             <div class="m-auto mt-8 box-width-2">
-                <form action="">
+                <form action="" id="pf_myForm" onsubmit="pf_signup(event)">
                     <div class="box-margin">
                         <label>First Name</label><br>
                         <input class="box-control" type="text" required>
@@ -90,7 +92,7 @@
                     </div>
 
                     <div class="mt-8">
-                        <button class="btn-primary">
+                        <button onclick="pf_createAccount()" class="btn-primary">
                             Next
                         </button>
                     </div>
