@@ -685,7 +685,16 @@
         fetch('/src/Nav2/Nav.html')
             .then(response => response.text())
             .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
+                const navbarContainer = document.getElementById('navbar-placeholder');
+                navbarContainer.innerHTML = data;
+
+                const scripts = navbarContainer.querySelectorAll('script');
+                scripts.forEach(script => {
+                    const newScript = document.createElement('script');
+                    newScript.textContent = script.textContent;
+                    document.body.appendChild(newScript);
+                    script.remove(); // Clean up if necessary
+                });
             })
             .catch(error => console.error('Error loading navbar:', error));
 
