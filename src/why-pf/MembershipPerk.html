@@ -682,13 +682,10 @@
     <div id="footer-placeholder"></div>
     <script>
         //  Navbar -----------------------
-        fetch('/src/Nav/nav.html')
+        fetch('/src/Nav2/Nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
-                const script = document.createElement('script');
-                script.src = '/src/Nav/nav.js';
-                document.body.appendChild(script);
             })
             .catch(error => console.error('Error loading navbar:', error));
 
