@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Outfit", serif;
 }
+/* Default Desktop Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,8 +23,8 @@
 }
 
 .navbar-logo img {
-    margin-top: 30px;
-    width: 80px;
+    width: 100px;
+    height: auto;
 }
 
 .navbar-menu {
@@ -51,6 +52,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 10px 0;
+    min-width: 180px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -91,6 +93,7 @@
     background-color: #5836c8;
 }
 
+/* Hamburger Menu Icon */
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -104,7 +107,7 @@
     background-color: #333;
 }
 
-/* Hamburger Menu for Mobile */
+/* Overlay for Hamburger Menu */
 #hamburger-menu {
     display: none;
     position: fixed;
@@ -117,12 +120,14 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    flex-direction: column;
 }
 
 #hamburger-menu nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
 .menu-close {
@@ -139,20 +144,92 @@
     cursor: pointer;
 }
 
-/* Responsive styles */
+/* Media Queries */
+
+/* Tablet Screens */
+@media (max-width: 1024px) {
+    .navbar-menu {
+        gap: 15px;
+    }
+
+    .navbar-logo img {
+        width: 90px;
+    }
+
+    .navbar-actions .account-btn, .navbar-actions .join-btn {
+        padding: 6px 15px;
+    }
+}
+
+/* Mobile Screens (General) */
 @media (max-width: 768px) {
-    .navbar-menu, .navbar-actions {
+    /* Hide the navbar menu and use menu toggle */
+    .navbar-menu {
         display: none;
     }
 
+    /* Show menu toggle icon */
     .menu-toggle {
         display: block;
     }
 
+    /* Hide language select */
+    .language-select {
+        display: none;
+    }
+
+    /* Reduce logo size */
+    .navbar-logo img {
+        width: 80px;
+    }
+
+    /* Center logo */
+    .navbar-logo {
+        margin: auto;
+    }
+
+    /* Stack buttons vertically */
+    .navbar-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Small Mobile Screens (iPhone) */
+@media (max-width: 480px) {
+    /* Adjust logo size */
+    .navbar-logo img {
+        width: 60px;
+    }
+
+    /* Hide the navbar actions */
+    .navbar-actions {
+        display: none;
+    }
+
+    /* Hamburger menu toggle */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    /* Display hamburger menu on toggle */
     #hamburger-menu {
         display: flex;
     }
+
+    #hamburger-menu nav {
+        gap: 30px;
+    }
 }
+
+/* Show the hamburger menu when toggle is active */
+.menu-toggle.active + #hamburger-menu {
+    display: flex;
+}
+
 .navbar1{
     display: flex;
     justify-content: center; /* Centers items horizontally */
