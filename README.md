@@ -1,6 +1,6 @@
 # project-gym-fitness-frontend
 
-Link: https://project-gym-fitness.netlify.app/
+Link: https://impcakash.github.io/project-gym-fitness-frontend/
 
 This is a clone of planetfitness.com. Planet Fitness is a franchisor and operator of fitness centres. It provides a high-quality workout experience at an affordable cost. It also has different membership options, so we can pick the one that works best for us. All of our PF locations have a variety of high-quality, brand-name cardio and strength equipment.
 
