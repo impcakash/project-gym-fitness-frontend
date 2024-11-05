@@ -61,7 +61,8 @@
             <h1 class="text-center mt-8 box-title">SIGN IN</h1>
 
             <div class="m-auto mt-8 box-width-2">
-                <form action="" id="pf_myForm" onsubmit="pf_signin(event)">
+                <!-- <form action="" id="pf_myForm" onsubmit="pf_signin(event)"> -->
+                <form action="" id="pf_myForm">
                     <div class="box-margin">
                         <label>Enter your email</label><br>
                         <input class="box-control" id="pf_email" type="email" required>
@@ -74,7 +75,7 @@
                     <div id="pf_warning" class="box-margin"></div>
 
                     <div class="mt-8">
-                        <button class="btn-primary">
+                        <button class="btn-primary" onclick="pf_signin_href()">
                             Continue
                         </button>
                     </div>
