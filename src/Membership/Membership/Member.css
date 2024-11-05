@@ -73,7 +73,7 @@
     cursor: pointer;
     font-size: 19px;
 }
-.join-btn{
+.join-btn1{
     background:rebeccapurple;
     color: white;
     border: 1px solid grey;
@@ -83,6 +83,17 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
+}
+.join-btn{
+  background:rebeccapurple;
+  color: white;
+  border: 1px solid grey;
+  border-radius: 35px ;
+  padding: 15px;
+  width: 130px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .menu-toggle {
@@ -188,8 +199,8 @@
   }
     
   .card {
-    background-color: #6a0dad; /* Dark purple background for contrast */
-    color: white; /* White font color */
+    background-color:white; 
+    color:black; 
     width: 430px;
     margin: 15px;
     padding: 45px;
@@ -332,13 +343,6 @@
     margin-top: 113px;
     margin-left: -190px;
   }  
-
-
-
-
-
-
-
 
   /* Responsive Styles */
 

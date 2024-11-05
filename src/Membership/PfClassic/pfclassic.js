@@ -82,8 +82,8 @@ function toggleAnswer(element) {
 // hide comarison
 
   document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.querySelector(".toggle-comparison-btn"); // Select the toggle button
-    const comparisonTable = document.querySelector(".comparison-table"); // Select the comparison table
+    const toggleButton = document.querySelector(".toggle-comparison-btn"); 
+    const comparisonTable = document.querySelector(".comparison-table"); 
 
     toggleButton.addEventListener("click", function() {
         if (comparisonTable.style.display === "none") {
@@ -100,7 +100,6 @@ function toggleAnswer(element) {
 document.getElementById("searchButton").addEventListener("click", function() {
     const searchQuery = document.getElementById("searchInput").value;
     if (searchQuery) {
-        // Replace 'destination-page.html' with the URL of the page you want to navigate to
         window.location.href = `join.html?query=${encodeURIComponent(searchQuery)}`;
     } else {
         alert("Please enter a search query.");
