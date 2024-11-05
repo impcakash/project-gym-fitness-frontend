@@ -888,11 +888,11 @@ body{
   
     .more-questions-btn {
       display: block;
-      width: 27%;
+      width: 5%;
       padding: 18px 0;
       background-color: #44086f;
       color: #fff;
-      margin-left: 19em;
+      margin-left: 10em;
       font-size: 1.2rem;
       border: none;
       border-radius: 25px;
