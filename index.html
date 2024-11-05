@@ -13,6 +13,8 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="./src/HomePage/home.js" defer></script>
+
     <style gf-font-style="'Barlow Condensed':400">
         @font-face {
             font-family: 'Barlow Condensed';
@@ -52,7 +54,6 @@
 <body>
     <header>
 
-        <!-- Navigation Menu -->
         <nav class="navbar">
             <div class="navbar-logo">
                 <a href="#"><img src="https://www.planetfitness.com/remix/images/icons/Logo-Primary.svg"
@@ -62,7 +63,6 @@
             <ul class="navbar-menu">
                 <li><a href="./src/Membership/Membership/Member.html">Memberships</a></li>
                 <li class="dropdown">
-                    <!-- <a href="#">Why PF <i class="fa-solid fa-caret-down"></i></a> -->
                     <a>Why PF <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="./src/why-pf/whyPf.html">Why Planet Fitness</a></li>
@@ -71,7 +71,6 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <!-- <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a> -->
                     <a>Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="./src/work-out-with-us/OUR CLUBS/ourclubs.html">Our Clubs</a></li>
@@ -83,8 +82,6 @@
             </ul>
             <div class="navbar-actions">
                 <select class="language-select">
-                    <!-- <div class="flag-container">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="US Flag"> -->
                     <option value="en"> US (English)</option>
                     <option value="es">US (Spanish)</option>
                     <option value="es">Canada (English)</option>
@@ -92,7 +89,6 @@
                     <option value="es">Mexico (Spanish)</option>
                     <option value="es">Australia (English)</option>
                     <option value="es">Spain (Spanish)</option>
-                    <!-- </div> -->
                 </select>
 
                 <a href="./src/my-account/myAccount.html"><button class="account-btn">My Account</button></a>
@@ -106,16 +102,12 @@
             </div>
         </nav>
 
-
-
-        <!-- Full-Page Hamburger Menu -->
         <div id="hamburger-menu">
             <div class="menu-close">
                 <button id="close-btn">X</button>
             </div>
             <nav>
                 <a href="./src/Membership/Membership/Member.html">Memberships</a>
-                <!-- <a href="#">Why PF  <i class="fa-solid fa-caret-down"></i></a> -->
                 <li class="dropdown">
                     <a>Why PF <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
@@ -124,7 +116,6 @@
                         <li><a href="./src/why-pf/MembershipPerk.html">Member Perks</a></li>
                     </ul>
                 </li>
-                <!-- <a href="#">Work Out With Us  <i class="fa-solid fa-caret-down"></i></a> -->
                 <li class="dropdown">
                     <a href="#">Work Out With Us <i class="fa-solid fa-caret-down"></i></a>
                     <ul class="dropdown-menu">
@@ -182,20 +173,6 @@
 
     <br>
 
-    <!-- <section class="hero">
-        <img src="abc.jpg" alt="Background Image" class="hero-image">
-        <div class="hero-content">
-            <h1>Welcome to the Judgement Free Zone</h1>
-            <div class="search-bar">
-                <input type="text" placeholder="Search by address, city, or ZIP code">
-                <button class="search-btn">Find a Club</button>
-            </div>
-        </div>
-    </section>
-
-    -->
-
-
     <section class="hero">
         <div class="hero-background">
             <div class="background-image"></div>
@@ -211,44 +188,7 @@
         </div>
     </section>
 
-
-    <!-- <section id="memberships">
-      <h1 style="font-size: 45px;">Memberships</h1>
-      <br>
-      <br>
-      <p style="font-size: 20px; text-align: center;">We offer the PF Black Card® Membership and Classic Membership. Both get you access to The Judgement Free Zone®, and tons of cardio and strength equipment.</p>
-      <br>
-
-      <div class="membership-cards">
-
-          <div class="card black-card" style="background-color: #4b0082;">
-              <h3>PF Black Card®</h3>
-              <p>Starting at <span class="price">$24.99</span>/mo<span class="small-text">* plus taxes & fees</span></p>
-              <p>Access to any club, bring a guest anytime, PF+ premium digital workouts, and so much more!</p>
-              <button class="best-value">Best Value</button>
-              <button><a href="#" class="join-now">Join Now</a></button>
-              
-          </div>
-
-
-          <div class="card classic-card">
-              <h3>Classic</h3>
-              <p>Starting at <span class="price">$15</span>/mo<span class="small-text">* plus taxes & fees</span></p>
-              <p>Our standard membership, with unlimited access to your home club.</p>
-              <a href="#" class="join-now">Join Now</a>
-          </div>
-
-      </div>
-
-      <div class="compare-section" >
-          <button class="compare-btn">Compare Memberships</button>
-      </div>
-  </section> -->
-
-
-
     <section id="memberships">
-        <!-- Title and Description -->
         <div class="membership-header">
             <h1>Memberships</h1>
             <p>
@@ -629,7 +569,7 @@
 
     </footer>
 
-    <script src="./src/HomePage/home.js" defer></script>
+
 </body>
 
 </html>
