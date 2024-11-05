@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/src/Nav/nav.css">
 </head>
 
-<body class="bg-gray-100 top-90 ">
+<body>
     
   <nav class="navbar">
     <div class="navbar-logo">
@@ -62,8 +62,6 @@
     </div>
 </nav>
 
-
-  
   <!-- Full-Page Hamburger Menu -->
   <div id="hamburger-menu">
     <div class="menu-close">
@@ -142,86 +140,33 @@
 
 </body>
 <script>
-     //  Navbar -----------------------
-     fetch('/src/Nav/nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading navbar:', error));
-
-        // footer
-        fetch('/src/footer/footer1.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
 
 
-    function getCurrentLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition, showError);
-        } else {
-            alert("Geolocation is not supported by this browser.");
-        }
-    }
+// function searchClubs() {
+//     const query = document.getElementById('search').value;
+//     const mapFrame = document.querySelector('.map iframe');
+//     if (query) {
+//         mapFrame.src = `https://www.google.com/maps/embed/v1/search?key=YOUR_API_KEY&q=Planet+Fitness+near+${encodeURIComponent(query)}`;
+//     } else {
+//         alert("Please enter a location to search.");
+//     }
+// }
 
-    function showPosition(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-        alert(`Latitude: ${latitude}, Longitude: ${longitude}`);
-        // Here you could send the location data to a server or use it in some way
-    }
+// function getCurrentLocation() {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(position => {
+//             const { latitude, longitude } = position.coords;
+//             document.querySelector('.map iframe').src = `https://www.google.co.in/maps/place/Jalgaon,+Maharashtra/@20.9900794,75.5342234,13z/data=!3m1!4b1!4m6!3m5!1s0x3bd90fa4a1eab90f:0x37f67bd21bff0a3c!8m2!3d21.0076578!4d75.5626039!16zL20vMDJucDdn?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D`;
+//         });
+//     } else {
+//         alert("Geolocation is not supported by this browser.");
+//     }
+// }
 
-    function showError(error) {
-        switch (error.code) {
-            case error.PERMISSION_DENIED:
-                alert("User denied the request for Geolocation.");
-                break;
-            case error.POSITION_UNAVAILABLE:
-                alert("Location information is unavailable.");
-                break;
-            case error.TIMEOUT:
-                alert("The request to get user location timed out.");
-                break;
-            case error.UNKNOWN_ERROR:
-                alert("An unknown error occurred.");
-                break;
-        }
-    }
+// document.getElementById('search').addEventListener('keydown', function(event) {
+//     if (event.key === 'Enter') searchClubs();
+// });
 
-    function getCurrentLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition, showError);
-        } else {
-            alert("Geolocation is not supported by this browser.");
-        }
-    }
-
-    function showPosition(position) {
-        const latitude = position.coords.latitude;
-        const longitude = position.coords.longitude;
-        alert(`Latitude: ${latitude}, Longitude: ${longitude}`);
-        // Here you could send the location data to a server or use it in some way
-    }
-
-    function showError(error) {
-        switch (error.code) {
-            case error.PERMISSION_DENIED:
-                alert("User denied the request for Geolocation.");
-                break;
-            case error.POSITION_UNAVAILABLE:
-                alert("Location information is unavailable.");
-                break;
-            case error.TIMEOUT:
-                alert("The request to get user location timed out.");
-                break;
-            case error.UNKNOWN_ERROR:
-                alert("An unknown error occurred.");
-                break;
-        }
-    }
 
 </script>
 
