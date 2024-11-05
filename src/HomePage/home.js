@@ -37,9 +37,9 @@ function prevSlide() {
 window.addEventListener('resize', updateSlidePosition);
 
 // for download app
-function downloadApp() {
-    alert("Redirecting to app download page...");
-    window.location.href = "https://yourappdownloadlink.com"; // Replace with actual app download link
-}
+// function downloadApp() {
+//     alert("Redirecting to app download page...");
+//     window.location.href = "https://yourappdownloadlink.com"; // Replace with actual app download link
+// }
 
 // ((((****)))))Second time slider
