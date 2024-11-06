@@ -1,3 +1,4 @@
+/*
 function pf_signin(e) {
     e.preventDefault();
 
@@ -22,4 +23,9 @@ function pf_signin(e) {
             // pf_warning.style.color = "red";
         }
     });
+}
+*/
+
+function pf_signin_href() {
+    window.location.href = "myAccount.html"
 }

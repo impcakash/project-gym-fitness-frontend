@@ -1,3 +1,4 @@
+/*
 function pf_signup(e) {
     e.preventDefault();
 
@@ -24,6 +25,7 @@ function pf_signup(e) {
 
     localStorage.setItem("pf_users", JSON.stringify(arr));
 }
+*/
 
 function pf_createAccount() {
     window.location.href = "signin.html";
