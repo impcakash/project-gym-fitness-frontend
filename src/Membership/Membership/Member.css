@@ -339,8 +339,6 @@
   
   }
   .subtitle {
-    /* font-size: 14px; */
-    /* font-weight: bold; */
     margin-top: 113px;
     margin-left: -190px;
   }  
@@ -349,9 +347,6 @@
 
 /* Tablets (768px and below) */
 @media (max-width: 768px) {
-    body{
-      font-family: Arial, sans-serif;
-    }
     .membership-section h1 {
       font-size: 35px;
     }
@@ -359,9 +354,7 @@
     .membership-cards {
       flex-direction: column;
       align-items: center;
-      margin-left: 0;
-      /* margin-right: 280px; */
-      /* width: 550px; */
+      margin-left: 10;
     }
     .classic-card h2 {
         margin: -46px 0px -0px -210px;
@@ -369,25 +362,25 @@
       }
   
     .card, .black-card {
-      width: 85%;
-      margin: 20px 20px;
-      margin-left: 34px;
+      width: 65%;
+      /* margin: 10px 10px; */
+      margin-left: -20px;
     }
   
     .xyz {
-      flex-direction: column-;
+      flex-direction: column;
       font-size: 19px;
+      /* display: flex; */
+
     }
     .pqr{
-        margin-top: 15px;
+        margin-top: 16px;
+        /* flex-direction: column;
+        display: flex; */
     }
   
     .container2 {
       padding: 20px;
-    }
-  
-    .title, .title span {
-      font-size: 28px;
     }
     .dropdown-content img {
       width: 55%;
@@ -646,15 +639,7 @@ font-weight: 900;
 margin-top: 113px;
 margin-left: -190px;
 }  
-/* .body {
-font-family: Arial, sans-serif;
-background-color: rgba(211, 213, 213, 0.574);
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 160vh;
 
-} */
 
 .table {
 width: 155%;
@@ -885,7 +870,7 @@ color: white;
 border: none;
 border-radius: 0 30px 30px 0;
 cursor: pointer;
- margin-left: 28px;
+ margin-left: 8px;
 font-size: 18px;
 }
 .search-box button:hover {
@@ -988,10 +973,39 @@ margin-right: 300px;;
       padding: 20px;
     }
   
-    .title, .title span {
+    /* .title, .title span {
       font-size: 27px;
-       padding: 70px 0px 0px 90px ;
+       padding-left: 80px;
     }
+    .subtitle{
+       padding-right: 50px;
+       width: 300px;
+       margin-left: -50px;
+    } */
+    .title{
+      font-size: 25px;
+      margin-top: 80px;
+      margin-right: -70px;
+    }
+    
+    
+    .title span {
+      font-size: 25px;
+      color: #fff200;
+      font-weight: 900;
+      
+    
+    }
+    .subtitle {
+      /* margin-top: 113px;
+      margin-left: -30px; */
+      font-size: 19px;
+      margin-left: 130px;
+    }  
+    .content .subtitle{
+      margin-right: -10px;
+    }
+  
     .container3 {
       flex-direction: column;
       padding: 20px;
@@ -1230,12 +1244,6 @@ margin-right: 300px;;
      padding-right: -190px;
   }
 
-  .subtitle, .title, .title span {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-   
-
   .image-container, .content {
     width: 100%;
     padding: 10px;
@@ -1305,12 +1313,7 @@ margin-right: 300px;;
           .card, .black-card {
             width: 100%;
           }
-        
-          .subtitle, .title, .title span {
-            font-size: 24px;
-            margin: 10px 0;
-          }
-        
+            
           .image-container, .content {
             width: 100%;
             padding: 10px;
@@ -1387,13 +1390,7 @@ margin-right: 300px;;
       
         .card, .black-card {
           width: 100%;
-        }
-      
-        .subtitle, .title, .title span {
-          font-size: 24px;
-          margin: 10px 0;
-        }
-      
+        }      
         .image-container, .content {
           width: 100%;
           padding: 10px;
